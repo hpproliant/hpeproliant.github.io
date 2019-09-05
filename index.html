@@ -19,5 +19,19 @@ layout: default
 
 <div class="container">
   <h1>HPE Proliant CI Logs</h1>
-  <p><strong><a href="/3856/">3856</a></strong></p>
+  <p>
+  <?php
+echo "Here are our files";
+$path = ".";
+$dh = opendir($path);
+$i=1;
+while (($file = readdir($dh)) !== false) {
+    if($file != "." && $file != ".." && $file != "index.php" && $file != ".htaccess" && $file != "error_log" && $file != "cgi-bin") {
+        echo "<a href='$path/$file'>$file</a><br /><br />";
+        $i++;
+    }
+}
+closedir($dh);
+?> 
+  </p>
 </div>
