@@ -16,22 +16,19 @@ layout: default
     letter-spacing: -1px;
   }
 </style>
-
 <div class="container">
   <h1>HPE Proliant CI Logs</h1>
-  <p>
-  <?php
-echo "Here are our files";
-$path = ".";
-$dh = opendir($path);
-$i=1;
-while (($file = readdir($dh)) !== false) {
-    if($file != "." && $file != ".." && $file != "index.php" && $file != ".htaccess" && $file != "error_log" && $file != "cgi-bin") {
-        echo "<a href='$path/$file'>$file</a><br /><br />";
-        $i++;
-    }
-}
-closedir($dh);
-?> 
-  </p>
 </div>
+
+<?php
+  if ($handle = opendir('.')) {
+    while (false !== ($file = readdir($handle))) {
+      if ($file != "." && $file != "..") {
+        $thelist .= '<li><a href="'.$file.'">'.$file.'</a></li>';
+      }
+    }
+    closedir($handle);
+  }
+?>
+<h2>List of files:</h2>
+<ul><?php echo $thelist; ?></ul>
