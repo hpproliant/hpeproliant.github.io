@@ -17,18 +17,8 @@ layout: default
   }
 </style>
 <div class="container">
-  <h1>HPE Proliant CI Logs</h1>
+  
 </div>
 
-<?php
-  if ($handle = opendir('.')) {
-    while (false !== ($file = readdir($handle))) {
-      if ($file != "." && $file != "..") {
-        $thelist .= '<li><a href="'.$file.'">'.$file.'</a></li>';
-      }
-    }
-    closedir($handle);
-  }
-?>
-<h2>List of files:</h2>
-<ul><?php echo $thelist; ?></ul>
+
+
