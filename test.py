@@ -31,7 +31,7 @@ html_start = """
         </div>
         <!-- MAIN CONTENT -->
         <div id = "main_content_wrap" class = "outer">
-            <section id = "main_content" class = "inner">
+            <!-- <section id = "main_content" class = "inner"> -->
             <style type = "text/css" media = "screen">
                 .container {
                     margin: 0px auto
@@ -47,7 +47,7 @@ html_start = """
                 table, td, th {
                     border: 0px solid black;
                 }
-            </style>
+            <!-- </style> -->
             <div class = "container"> """
 
 html_end = """
