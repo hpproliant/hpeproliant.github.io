@@ -62,6 +62,9 @@ def create_html(path):
               line-height: 1
             letter-spacing: -1px
           }
+          table, td, th {
+              border: 0px solid black;
+          }
         </style>
         <div class = "container"> """
 
