@@ -26,7 +26,7 @@ def create_html(path):
             <meta http-equiv = "X-UA-Compatible" content = "IE=edge" >
             <meta name = "viewport" content = "width=device-width,maximum-scale=2" >
             <link rel = "stylesheet" type = "text/css" media = "screen" href = "/hpeproliant.github.io/assets/css/style.css?v=a9c09387dd73c4b8dbf928d9a83a6b95132c0d1c" >
-        <!-- Begin Jekyll SEO tag v2.5.0 - ->
+        <!-- Begin Jekyll SEO tag v2.5.0 -->
         <title > HPE Proliant CI LOGS < /title >
         <meta name = "generator" content = "Jekyll v3.8.5" / >
         <meta property = "og:title" content = "HPE Proliant CI LOGS" / >
@@ -36,10 +36,10 @@ def create_html(path):
         <meta property = "og:site_name" content = "HPE Proliant CI LOGS" / >
         <script type = "application/ld+json" >
         {"@type": "WebSite", "headline": "HPE Proliant CI LOGS", "url": "https://hpproliant.github.io/hpeproliant.github.io/", "name": "HPE Proliant CI LOGS", "@context": "http://schema.org"} < /script >
-        <!-- End Jekyll SEO tag - ->
+        <!-- End Jekyll SEO tag -->
         </head >
         <body >
-         <!-- HEADER - ->
+         <!-- HEADER -->
             <div id = "header_wrap" class = "outer" >
                <header class = "inner" >
                   <a id = "forkme_banner" href = "https://github.com/hpproliant/hpeproliant.github.io" > View on GitHub < /a >
@@ -47,7 +47,7 @@ def create_html(path):
                   <h2 id = "project_tagline" > </h2 >
                 </header >
             </div >
-            <!-- MAIN CONTENT - ->
+            <!-- MAIN CONTENT -->
             <div id = "main_content_wrap" class = "outer">
               <section id = "main_content" class = "inner">
                 <style type = "text/css" media = "screen">
