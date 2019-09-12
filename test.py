@@ -46,11 +46,11 @@ html_start = """
                 table, td, th {
                     border: 0px solid black;
                 }
+            </style>
             <div class = "container"> """
 
 html_end = """
             </div>
-            </section>
         </div>
         <!-- FOOTER  -->
         <div id="footer_wrap" class="outer">
