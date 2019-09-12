@@ -117,7 +117,7 @@ def create_html(path):
         cmd_list = os.listdir(path)
         if len(cmd_list) == 0 or path.split('/')[-1] == '.git':
             return
-        table_start = "<table>\n"
+        table_start = "<table class=\"inner\">\n"
         for i in cmd_list:
             new_path = os.path.join(path, i)
             if '.html' not in i:    
