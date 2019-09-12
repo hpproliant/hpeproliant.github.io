@@ -66,7 +66,7 @@ html_end = """
 
 
 def create_html(path):
-    file_content = ""
+    file_display = ""
     table_data = ""
     if os.path.isdir(path):
         cmd_list = os.listdir(path)
@@ -88,16 +88,16 @@ def create_html(path):
                 create_html(new_path)
         table_data = table_start + "</table>\n"
     else:
-        file_content = "<p><pre>\n"
+        file_display = "<p><pre>\n"
         if '.gz' in path:
             with gzip.open(path, 'rb') as f:
-                file_content = file_content + f.read()
+                file_content = f.read()
         elif '.html' not in path:
             with open(path, 'r') as f:
-                file_content = file_content + f.read()
-        file_content = "</pre></p>"
+                file_content = f.read()
+        file_display = file_display + file_content + "</pre></p>"
 
-    html_page = html_start + table_data + file_content + html_end
+    html_page = html_start + table_data + file_display + html_end
     if os.path.isdir(path):
         with open(os.path.join(path, (path.split('/')[-1] + '.html')), "w") as file:
             file.write(html_page)
