@@ -29,6 +29,7 @@ html_start = """
             </header>
         </div>
         <!-- MAIN CONTENT -->
+        <hr>
         <div id = "main_content_wrap" class = "outer">
             <style type = "text/css" media = "screen">
                 .container {
@@ -52,6 +53,7 @@ html_end = """
             </div>
         </div>
         <!-- FOOTER  -->
+        <hr>
         <div id="footer_wrap" class="outer">
             <footer class="inner">
                 <p class="copyright">HPE Proliant CI LOGS maintained by iLO drivers team</p>
