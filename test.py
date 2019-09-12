@@ -34,8 +34,8 @@ html_start = """
             <section id = "main_content" class = "inner">
             <style type = "text/css" media = "screen">
                 .container {
-                    margin: 10px auto
-                    max-width: 600px
+                    margin: 0px auto
+                    max-width: 80%
                     text-align: center
                  }
                 h1 {
@@ -88,14 +88,16 @@ def create_html(path):
                 create_html(new_path)
         table_data = table_start + "</table>\n"
     else:
+        file_content = "<p><pre>\n"
         if '.gz' in path:
             with gzip.open(path, 'rb') as f:
-                file_content = f.read()
+                file_content = file_content + f.read()
         elif '.html' not in path:
             with open(path, 'r') as f:
-                file_content = f.read()
+                file_content = file_content + f.read()
+        file_content = "</pre></p>"
 
-    html_page = html_start + table_data + "<p><pre>\n{}\n</pre></p>".format(file_content) + html_end
+    html_page = html_start + table_data + file_content + html_end
     if os.path.isdir(path):
         with open(os.path.join(path, (path.split('/')[-1] + '.html')), "w") as file:
             file.write(html_page)
