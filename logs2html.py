@@ -1,4 +1,8 @@
+import os
+import sys
+import gzip
 
+html_start = """
 <!DOCTYPE html>
     <html lang = "en-US">
     <head>
@@ -44,18 +48,9 @@
                     border: 0px solid black;
                 }
             </style>
-            <div class = "container"> <table>
-<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/Gemfile.lock.html'>Gemfile.lock</a></td></tr>
-<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/test.py.html'>test.py</a></td></tr>
-<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/_config.yml.html'>_config.yml</a></td></tr>
-<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/.git/.git.html'>.git</a></td></tr>
-<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/happy.html'>happy</a></td></tr>
-<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/test.py_org.html'>test.py_org</a></td></tr>
-<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/Gemfile.html'>Gemfile</a></td></tr>
-<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/logs/logs.html'>logs</a></td></tr>
-<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/sdfsdfd.html'>sdfsdfd</a></td></tr>
-</table>
+            <div class = "container"> """
 
+html_end = """
             </div>
         </div>
         <!-- FOOTER  -->
@@ -67,3 +62,48 @@
         </div>
     </body>
 </html>
+"""
+
+
+def create_html(path):
+    file_display = ""
+    table_data = ""
+    if os.path.isdir(path):
+        cmd_list = os.listdir(path)
+        if len(cmd_list) == 0 or path.split('/')[-1] == '.git':
+            return
+        table_start = "<table>\n"
+        for i in cmd_list:
+            new_path = os.path.join(path, i)
+            if '.html' not in i:    
+                if os.path.isdir(new_path):
+                    table_start = table_start + \
+                        "<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/{}/{}.html'>{}</a></td></tr>\n".format(
+                            new_path.split(sys.argv[1])[-1], i, i)
+                else:
+                    table_start = table_start + \
+                        "<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/{}.html'>{}</a></td></tr>\n".format(
+                            new_path.split(sys.argv[1])[-1], i)
+                
+                create_html(new_path)
+        table_data = table_start + "</table>\n"
+    else:
+        file_display = "<p><pre>\n"
+        if '.gz' in path:
+            with gzip.open(path, 'rb') as f:
+                file_content = f.read()
+        elif '.html' not in path:
+            with open(path, 'r') as f:
+                file_content = f.read()
+        file_display = file_display + file_content + "</pre></p>"
+
+    html_page = html_start + table_data + file_display + html_end
+    if os.path.isdir(path):
+        with open(os.path.join(path, (path.split('/')[-1] + '.html')), "w") as file:
+            file.write(html_page)
+    else:
+        with open(path + '.html', "w") as file:
+            file.write(html_page)
+
+
+create_html(sys.argv[1])
