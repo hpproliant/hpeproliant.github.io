@@ -1,0 +1,6 @@
+-- Logs begin at Tue 2019-12-17 06:03:00 UTC, end at Tue 2019-12-17 09:06:47 UTC. --
+Dec 17 09:05:46 ubuntu systemd[1]: Started Devstack devstack@s-object.service.
+Dec 17 09:05:49 ubuntu object-server[1541]: Started child 2117 from parent 1541
+Dec 17 09:05:49 ubuntu swift-object-server[1541]: object-server: Started child 2117 from parent 1541
+Dec 17 09:05:49 ubuntu object-server[1541]: Started child 2118 from parent 1541
+Dec 17 09:05:49 ubuntu swift-object-server[1541]: object-server: Started child 2118 from parent 1541
