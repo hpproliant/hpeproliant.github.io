@@ -1,0 +1,622 @@
+
+File System Summary
+===================
+
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           395M  836K  394M   1% /run
+/dev/vda1        38G  6.4G   30G  18% /
+tmpfs           2.0G  4.0K  2.0G   1% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+tmpfs           395M     0  395M   0% /run/user/1000
+tmpfs           512M  123M  390M  24% /opt/stack/data/etcd
+/dev/loop0      6.0G  838M  5.2G  14% /opt/stack/data/swift/drives/sdb1
+
+
+Process Listing
+===============
+
+ps axo user,ppid,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,args
+---------------------------------------------------------------
+
+USER      PPID   PID %CPU %MEM    VSZ   RSS TT       STAT  STARTED     TIME COMMAND
+root         0     1  0.6  0.2 225680  9444 ?        Ss   14:38:30 00:00:25 /sbin/init
+root         0     2  0.0  0.0      0     0 ?        S    14:38:30 00:00:00 [kthreadd]
+root         2     4  0.0  0.0      0     0 ?        I<   14:38:30 00:00:00 [kworker/0:0H]
+root         2     6  0.0  0.0      0     0 ?        I<   14:38:30 00:00:00 [mm_percpu_wq]
+root         2     7  0.0  0.0      0     0 ?        S    14:38:30 00:00:00 [ksoftirqd/0]
+root         2     8  0.2  0.0      0     0 ?        I    14:38:30 00:00:09 [rcu_sched]
+root         2     9  0.0  0.0      0     0 ?        I    14:38:30 00:00:00 [rcu_bh]
+root         2    10  0.0  0.0      0     0 ?        S    14:38:30 00:00:00 [migration/0]
+root         2    11  0.0  0.0      0     0 ?        S    14:38:30 00:00:00 [watchdog/0]
+root         2    12  0.0  0.0      0     0 ?        S    14:38:30 00:00:00 [cpuhp/0]
+root         2    13  0.0  0.0      0     0 ?        S    14:38:30 00:00:00 [cpuhp/1]
+root         2    14  0.0  0.0      0     0 ?        S    14:38:30 00:00:00 [watchdog/1]
+root         2    15  0.0  0.0      0     0 ?        S    14:38:30 00:00:00 [migration/1]
+root         2    16  0.0  0.0      0     0 ?        S    14:38:30 00:00:01 [ksoftirqd/1]
+root         2    18  0.0  0.0      0     0 ?        I<   14:38:30 00:00:00 [kworker/1:0H]
+root         2    19  0.0  0.0      0     0 ?        S    14:38:30 00:00:00 [kdevtmpfs]
+root         2    20  0.0  0.0      0     0 ?        I<   14:38:30 00:00:00 [netns]
+root         2    21  0.0  0.0      0     0 ?        S    14:38:30 00:00:00 [rcu_tasks_kthre]
+root         2    22  0.0  0.0      0     0 ?        S    14:38:30 00:00:00 [kauditd]
+root         2    24  0.0  0.0      0     0 ?        S    14:38:30 00:00:00 [khungtaskd]
+root         2    25  0.0  0.0      0     0 ?        S    14:38:30 00:00:00 [oom_reaper]
+root         2    26  0.0  0.0      0     0 ?        I<   14:38:30 00:00:00 [writeback]
+root         2    27  0.0  0.0      0     0 ?        S    14:38:30 00:00:00 [kcompactd0]
+root         2    28  0.0  0.0      0     0 ?        SN   14:38:30 00:00:00 [ksmd]
+root         2    29  0.0  0.0      0     0 ?        SN   14:38:30 00:00:00 [khugepaged]
+root         2    30  0.0  0.0      0     0 ?        I<   14:38:30 00:00:00 [crypto]
+root         2    31  0.0  0.0      0     0 ?        I<   14:38:30 00:00:00 [kintegrityd]
+root         2    32  0.0  0.0      0     0 ?        I<   14:38:30 00:00:00 [kblockd]
+root         2    33  0.0  0.0      0     0 ?        I<   14:38:30 00:00:00 [ata_sff]
+root         2    34  0.0  0.0      0     0 ?        I<   14:38:30 00:00:00 [md]
+root         2    35  0.0  0.0      0     0 ?        I<   14:38:30 00:00:00 [edac-poller]
+root         2    36  0.0  0.0      0     0 ?        I<   14:38:30 00:00:00 [devfreq_wq]
+root         2    37  0.0  0.0      0     0 ?        I<   14:38:30 00:00:00 [watchdogd]
+root         2    40  0.0  0.0      0     0 ?        S    14:38:32 00:00:01 [kswapd0]
+root         2    41  0.0  0.0      0     0 ?        I<   14:38:32 00:00:00 [kworker/u5:0]
+root         2    42  0.0  0.0      0     0 ?        S    14:38:32 00:00:00 [ecryptfs-kthrea]
+root         2    84  0.0  0.0      0     0 ?        I<   14:38:32 00:00:00 [kthrotld]
+root         2    85  0.0  0.0      0     0 ?        I<   14:38:32 00:00:00 [acpi_thermal_pm]
+root         2    86  0.0  0.0      0     0 ?        S    14:38:32 00:00:00 [scsi_eh_0]
+root         2    87  0.0  0.0      0     0 ?        I<   14:38:32 00:00:00 [scsi_tmf_0]
+root         2    88  0.0  0.0      0     0 ?        S    14:38:32 00:00:00 [scsi_eh_1]
+root         2    89  0.0  0.0      0     0 ?        I<   14:38:32 00:00:00 [scsi_tmf_1]
+root         2    95  0.0  0.0      0     0 ?        I<   14:38:32 00:00:00 [ipv6_addrconf]
+root         2   104  0.0  0.0      0     0 ?        I<   14:38:32 00:00:00 [kstrp]
+root         2   121  0.0  0.0      0     0 ?        I<   14:38:32 00:00:00 [charger_manager]
+root         2   171  0.0  0.0      0     0 ?        I<   14:38:32 00:00:01 [kworker/0:1H]
+root         2   251  0.0  0.0      0     0 ?        I<   14:38:34 00:00:00 [raid5wq]
+root         2   305  0.1  0.0      0     0 ?        S    14:38:35 00:00:05 [jbd2/vda1-8]
+root         2   306  0.0  0.0      0     0 ?        I<   14:38:35 00:00:00 [ext4-rsv-conver]
+root         2   335  0.0  0.0      0     0 ?        I<   14:38:35 00:00:01 [kworker/1:1H]
+root         2   385  0.0  0.0      0     0 ?        I<   14:38:41 00:00:00 [iscsi_eh]
+root         2   391  0.0  0.0      0     0 ?        I<   14:38:41 00:00:00 [ib-comp-wq]
+root         2   392  0.0  0.0      0     0 ?        I<   14:38:41 00:00:00 [ib-comp-unb-wq]
+root         2   393  0.0  0.0      0     0 ?        I<   14:38:41 00:00:00 [ib_mcast]
+root         2   394  0.0  0.0      0     0 ?        I<   14:38:41 00:00:00 [ib_nl_sa_wq]
+root         2   395  0.0  0.0      0     0 ?        I<   14:38:41 00:00:00 [rdma_cm]
+root         1   402  0.0  0.0  97708  1760 ?        Ss   14:38:43 00:00:00 /sbin/lvmetad -f
+root         1   415  0.0  0.1  47328  6024 ?        Ss   14:38:44 00:00:03 /lib/systemd/systemd-udevd
+systemd+     1   442  0.0  0.0 141928  3240 ?        Ssl  14:38:46 00:00:00 /lib/systemd/systemd-timesyncd
+systemd+     1   580  0.0  0.1  88368  5748 ?        Ss   14:38:56 00:00:00 /lib/systemd/systemd-networkd
+systemd+     1   604  0.0  0.1  70764  4952 ?        Ss   14:38:56 00:00:00 /lib/systemd/systemd-resolved
+root         2   757  0.0  0.0      0     0 ?        S    14:41:09 00:00:00 [ext4lazyinit]
+ubuntu   32701   792  0.0  0.8 127696 34260 ?        S    15:41:51 00:00:00 /usr/bin/python3.6 /usr/local/bin/swift-container-server /etc/swift/container-server/1.conf -v
+ubuntu   32701   795  0.1  0.8 127696 33596 ?        S    15:41:51 00:00:00 /usr/bin/python3.6 /usr/local/bin/swift-container-server /etc/swift/container-server/1.conf -v
+message+     1   799  0.1  0.1  50236  4180 ?        Ss   14:41:11 00:00:04 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         1   830  0.0  0.0 161076  1544 ?        Ssl  14:41:11 00:00:00 /usr/bin/lxcfs /var/lib/lxcfs/
+root         1   840  0.0  0.0 110480  3352 ?        Ssl  14:41:11 00:00:00 /usr/sbin/irqbalance --foreground
+root         1   841  0.0  0.1 287996  6696 ?        Ssl  14:41:11 00:00:02 /usr/lib/accountsservice/accounts-daemon
+root         1   843  0.0  0.0  31748  2876 ?        Ss   14:41:11 00:00:00 /usr/sbin/cron -f
+root         1   847  0.0  0.1  71052  6352 ?        Ss   14:41:11 00:00:02 /lib/systemd/systemd-logind
+daemon       1   848  0.0  0.0  28332  2076 ?        Ss   14:41:11 00:00:00 /usr/sbin/atd -f
+root         1   849  0.0  0.3 170832 13604 ?        Ssl  14:41:11 00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         1   859  0.0  0.0  16412  2096 ttyS0    Ss+  14:41:11 00:00:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root         1   862  0.0  0.0  14888  1676 tty1     Ss+  14:41:11 00:00:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+ubuntu       1   877  2.4  0.8 119864 35628 ?        Ss   15:41:52 00:00:02 /usr/bin/python3.6 /usr/local/bin/swift-account-server /etc/swift/account-server/1.conf -v
+root         1   904  0.0  0.4 187676 16748 ?        Ssl  14:41:13 00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         1   905  0.0  0.1 291456  6676 ?        Ssl  14:41:13 00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+mysql        1  1002  6.3  6.1 1604356 248492 ?      Sl   15:27:09 00:01:01 /usr/sbin/mysqld --daemonize --pid-file=/run/mysqld/mysqld.pid
+root         1  1117  0.0  0.0  72296  3492 ?        Ss   14:41:26 00:00:00 /usr/sbin/sshd -D
+root      1117  1256  0.0  0.1 107984  4920 ?        Ss   14:42:38 00:00:00 sshd: ubuntu [priv]
+ubuntu    1256  1377  0.0  0.0 108132  3712 ?        S    14:42:42 00:00:00 sshd: ubuntu@notty
+rabbitmq     1  1491  0.0  0.0   4628   860 ?        Ss   15:06:34 00:00:00 /bin/sh /usr/sbin/rabbitmq-server
+ubuntu     877  1495  0.0  0.7 126600 31916 ?        S    15:41:53 00:00:00 /usr/bin/python3.6 /usr/local/bin/swift-account-server /etc/swift/account-server/1.conf -v
+ubuntu     877  1499  0.0  0.7 126456 31584 ?        S    15:41:53 00:00:00 /usr/bin/python3.6 /usr/local/bin/swift-account-server /etc/swift/account-server/1.conf -v
+rabbitmq  1491  1500  0.0  0.0   4628  1668 ?        S    15:06:34 00:00:00 /bin/sh /usr/lib/rabbitmq/bin/rabbitmq-server
+ubuntu       1  1581  1.4  0.9 126152 38104 ?        Ss   15:41:54 00:00:01 /usr/bin/python3.6 /usr/local/bin/swift-container-sync /etc/swift/container-server/1.conf
+rabbitmq     1  1708  0.0  0.0  26852   204 ?        S    15:06:34 00:00:00 /usr/lib/erlang/erts-9.2/bin/epmd -daemon
+ubuntu       1  1732  0.0  0.0  13312  2116 ?        Ss   15:27:12 00:00:00 /bin/bash /opt/stack/devstack/tools/dstat.sh /tmp/devstack_logs
+rabbitmq  1500  1786  0.5  1.4 2171856 58868 ?       Sl   15:06:35 00:00:11 /usr/lib/erlang/erts-9.2/bin/beam.smp -W w -A 64 -P 1048576 -t 5000000 -stbt db -zdbbl 32000 -K true -B i -- -root /usr/lib/erlang -progname erl -- -home /var/lib/rabbitmq -- -pa /usr/lib/rabbitmq/lib/rabbitmq_server-3.6.10/ebin -noshell -noinput -s rabbit boot -sname rabbit@ubuntu -boot start_sasl -kernel inet_default_connect_options [{nodelay,true}] -sasl errlog_type error -sasl sasl_error_logger false -rabbit error_logger {file,"/var/log/rabbitmq/rabbit@ubuntu.log"} -rabbit sasl_error_logger {file,"/var/log/rabbitmq/rabbit@ubuntu-sasl.log"} -rabbit enabled_plugins_file "/etc/rabbitmq/enabled_plugins" -rabbit plugins_dir "/usr/lib/rabbitmq/plugins:/usr/lib/rabbitmq/lib/rabbitmq_server-3.6.10/plugins" -rabbit plugins_expand_dir "/var/lib/rabbitmq/mnesia/rabbit@ubuntu-plugins-expand" -os_mon start_cpu_sup false -os_mon start_disksup false -os_mon start_memsup false -mnesia dir "/var/lib/rabbitmq/mnesia/rabbit@ubuntu" -kernel inet_dist_listen_min 25672 -kernel inet_dist_listen_max 25672
+ubuntu    1377  1792  0.0  0.0   4628   872 ?        Ss   14:46:23 00:00:00 /bin/sh -c /usr/bin/python2 && sleep 0
+ubuntu    1792  1793  0.6  0.6 127448 24708 ?        Sl   14:46:23 00:00:23 /usr/bin/python2
+ubuntu    1793  1794  0.0  0.0   4628   808 ?        S    14:46:24 00:00:00 /bin/sh -c bash /tmp/redfish-driver/HPE-CI-JOBS/redfish-driver/gate.sh
+ubuntu    1794  1796  0.0  0.0  13444  2252 ?        S    14:46:24 00:00:00 bash /tmp/redfish-driver/HPE-CI-JOBS/redfish-driver/gate.sh
+ubuntu    1732  1814  0.4  0.2  30292  9360 ?        S    15:27:12 00:00:03 python2 /usr/bin/dstat -tcmndrylpg --tcp --output /tmp/devstack_logs/dstat-csv.log
+ubuntu    1732  1815  3.0  0.2  31052  9840 ?        S    15:27:12 00:00:29 python2 /usr/bin/dstat -tcmndrylpg --top-cpu-adv --top-io-adv --top-mem --swap --tcp
+rabbitmq  1786  1901  0.0  0.0   4520  1584 ?        Ss   15:06:35 00:00:00 erl_child_setup 65536
+rabbitmq  1901  1966  0.0  0.0   8264  1076 ?        Ss   15:06:40 00:00:00 inet_gethost 4
+rabbitmq  1966  1967  0.0  0.0  10384  1556 ?        S    15:06:40 00:00:00 inet_gethost 4
+ubuntu       1  2318  4.3  1.3 158368 56088 ?        Ss   15:41:56 00:00:03 /usr/bin/python3.6 /usr/local/bin/swift-proxy-server /etc/swift/proxy-server.conf -v
+ubuntu    2318  2501  8.8  1.3 166604 55296 ?        S    15:41:59 00:00:07 /usr/bin/python3.6 /usr/local/bin/swift-proxy-server /etc/swift/proxy-server.conf -v
+root         1  2820  0.5  0.4 10515960 18776 ?      Ssl  15:27:15 00:00:04 /opt/stack/bin/etcd --name ubuntu --data-dir /opt/stack/data/etcd --initial-cluster-state new --initial-cluster-token etcd-cluster-01 --initial-cluster ubuntu=http://169.16.1.126:2380 --initial-advertise-peer-urls http://169.16.1.126:2380 --advertise-client-urls http://169.16.1.126:2379 --listen-peer-urls http://0.0.0.0:2380 --listen-client-urls http://169.16.1.126:2379 --debug
+ubuntu       1  3261  5.3  2.0 276740 82728 ?        Ss   15:42:14 00:00:03 /usr/bin/python3.6 /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+dhcpd        1  3432  0.0  0.2  47712 12076 ?        Ss   14:49:32 00:00:00 dhcpd -user dhcpd -group dhcpd -f -4 -pf /run/dhcp-server/dhcpd.pid -cf /etc/dhcp/dhcpd.conf
+www-data     1  3492  0.0  0.0  47560   580 ?        Ss   14:49:32 00:00:00 /usr/bin/webfsd -k /var/run/webfs/webfsd.pid -r /opt/stack/devstack/files -i 169.16.1.126 -p 9999 -u www-data -g www-data
+ubuntu    1796  3527  0.5  0.2  20384 10384 ?        S    14:49:57 00:00:17 bash ./stack.sh
+ubuntu       1  3977  0.0  0.2  99760 11936 ?        Ss   15:28:47 00:00:00 keystoneuWSGI master
+ubuntu    3977  3978  3.8  2.6 283884 105292 ?       S    15:28:47 00:00:33 keystoneuWSGI worker 1
+ubuntu    3977  3979  3.9  2.6 285580 106996 ?       S    15:28:47 00:00:34 keystoneuWSGI worker 2
+ubuntu       1  4024  0.1  0.3  99760 12224 ?        Ss   15:42:17 00:00:00 glance-apiuWSGI master
+ubuntu    4024  4027 26.7  2.4 349996 97236 ?        Sl   15:42:17 00:00:16 glance-apiuWSGI worker 1
+ubuntu    4024  4028  6.4  2.3 349292 95116 ?        Sl   15:42:17 00:00:03 glance-apiuWSGI worker 2
+ubuntu    3261  4151  0.0  1.8 276740 74544 ?        S    15:42:18 00:00:00 /usr/bin/python3.6 /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+ubuntu    3261  4152  0.0  1.8 276740 74620 ?        S    15:42:18 00:00:00 /usr/bin/python3.6 /usr/local/bin/glance-registry --config-file=/etc/glance/glance-registry.conf
+ubuntu    3527  4721  0.0  0.2  30624  9728 ?        S    15:43:18 00:00:00 python /opt/stack/devstack/tools/worlddump.py -d /tmp/devstack_logs
+ubuntu    4721  4724  0.0  0.0   4632   788 ?        S    15:43:18 00:00:00 /bin/sh -c ps axo user,ppid,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,args
+ubuntu    4724  4725  0.0  0.0  38376  3424 ?        R    15:43:18 00:00:00 ps axo user,ppid,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,args
+ubuntu    3527  6716  0.0  0.0  15224  3116 ?        S    14:50:03 00:00:00 bash ./stack.sh
+ubuntu    3527  6726  0.0  0.0  15224  3116 ?        S    14:50:03 00:00:00 bash ./stack.sh
+ubuntu    6716  6732  0.1  0.2  25520  8148 ?        S    14:50:03 00:00:06 python /opt/stack/devstack/tools/outfilter.py -v --no-timestamp -o /tmp/devstack_logs/devstacklog.txt.2020-01-06-145004
+ubuntu    6726  6739  0.0  0.1  25396  7900 ?        S    14:50:03 00:00:00 python /opt/stack/devstack/tools/outfilter.py -o /tmp/devstack_logs/devstacklog.txt.2020-01-06-145004.summary.2020-01-06-145004
+root         1  6811  0.0  0.1  21400  4400 ?        S<s  15:08:59 00:00:00 ovsdb-server /etc/openvswitch/conf.db -vconsole:emer -vsyslog:err -vfile:info --remote=punix:/var/run/openvswitch/db.sock --private-key=db:Open_vSwitch,SSL,private_key --certificate=db:Open_vSwitch,SSL,certificate --bootstrap-ca-cert=db:Open_vSwitch,SSL,ca_cert --no-chdir --log-file=/var/log/openvswitch/ovsdb-server.log --pidfile=/var/run/openvswitch/ovsdb-server.pid --detach
+root         1  6864  0.0  0.8 248688 35908 ?        S<Lsl 15:08:59 00:00:00 ovs-vswitchd unix:/var/run/openvswitch/db.sock -vconsole:emer -vsyslog:err -vfile:info --mlockall --no-chdir --log-file=/var/log/openvswitch/ovs-vswitchd.log --pidfile=/var/run/openvswitch/ovs-vswitchd.pid --detach
+root         2 12945  0.0  0.0      0     0 ?        I    15:34:01 00:00:00 [kworker/1:0]
+root         2 13435  0.0  0.0      0     0 ?        I    14:56:59 00:00:01 [kworker/u4:4]
+root         2 13465  0.0  0.0      0     0 ?        I    14:56:59 00:00:00 [kworker/0:5]
+root         1 13530  0.0  0.0  24188  2324 ?        Ss   14:57:00 00:00:00 /usr/sbin/xinetd -pidfile /run/xinetd.pid -stayalive -inetd_compat -inetd_ipv6
+root         2 13571  0.0  0.0      0     0 ?        I    15:16:36 00:00:00 [kworker/u4:1]
+root         1 14155  0.0  0.0  15352   148 ?        Ss   14:57:31 00:00:00 /usr/sbin/in.tftpd --listen --user tftp --address :69 --secure /var/lib/tftpboot
+root         1 14267  0.0  0.8 805560 35128 ?        Ssl  14:57:41 00:00:01 /usr/bin/containerd
+shellin+     1 14454  0.0  0.1  38068  4360 ?        Ss   14:58:00 00:00:00 /usr/bin/shellinaboxd -q --background=/var/run/shellinaboxd.pid -c /var/lib/shellinabox -p 4200 -u shellinabox -g shellinabox --user-css Black on White:+/etc/shellinabox/options-enabled/00+Black on White.css,White On Black:-/etc/shellinabox/options-enabled/00_White On Black.css;Color Terminal:+/etc/shellinabox/options-enabled/01+Color Terminal.css,Monochrome:-/etc/shellinabox/options-enabled/01_Monochrome.css --no-beep
+shellin+ 14454 14455  0.0  0.0  37936   668 ?        S    14:58:00 00:00:00 /usr/bin/shellinaboxd -q --background=/var/run/shellinaboxd.pid -c /var/lib/shellinabox -p 4200 -u shellinabox -g shellinabox --user-css Black on White:+/etc/shellinabox/options-enabled/00+Black on White.css,White On Black:-/etc/shellinabox/options-enabled/00_White On Black.css;Color Terminal:+/etc/shellinabox/options-enabled/01+Color Terminal.css,Monochrome:-/etc/shellinabox/options-enabled/01_Monochrome.css --no-beep
+root         1 15003  0.0  0.1  54060  8000 ?        Ss   14:58:38 00:00:00 /usr/sbin/haproxy -Ws -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid
+haproxy  15003 15005  0.0  0.0  54284  1252 ?        Ss   14:58:38 00:00:00 /usr/sbin/haproxy -Ws -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid
+root         1 15173  0.0  1.6 794140 65420 ?        Ssl  14:58:52 00:00:01 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root         1 15629  0.5  0.0  34120  3084 ?        Ss   14:59:13 00:00:15 /usr/sbin/conntrackd -C /etc/conntrackd/conntrackd.conf
+uuidd        1 17266  0.0  0.0  28592  1480 ?        Ss   15:35:56 00:00:00 /usr/sbin/uuidd --socket-activation
+root         2 19577  0.4  0.0      0     0 ?        S<   15:39:28 00:00:00 [loop0]
+root         2 19580  0.0  0.0      0     0 ?        I    15:39:28 00:00:00 [kworker/u4:0]
+root         2 19585  0.0  0.0      0     0 ?        I<   15:39:29 00:00:00 [xfsalloc]
+root         2 19589  0.0  0.0      0     0 ?        I<   15:39:29 00:00:00 [xfs_mru_cache]
+root         2 19590  0.0  0.0      0     0 ?        I<   15:39:29 00:00:00 [xfs-buf/loop0]
+root         2 19591  0.0  0.0      0     0 ?        I<   15:39:29 00:00:00 [xfs-data/loop0]
+root         2 19592  0.0  0.0      0     0 ?        I<   15:39:29 00:00:00 [xfs-conv/loop0]
+root         2 19593  0.0  0.0      0     0 ?        I<   15:39:29 00:00:00 [xfs-cil/loop0]
+root         2 19594  0.0  0.0      0     0 ?        I<   15:39:29 00:00:00 [xfs-reclaim/loo]
+root         2 19595  0.0  0.0      0     0 ?        I<   15:39:29 00:00:00 [xfs-log/loop0]
+root         2 19596  0.0  0.0      0     0 ?        I<   15:39:29 00:00:00 [xfs-eofblocks/l]
+root         2 19597  0.0  0.0      0     0 ?        S    15:39:29 00:00:00 [xfsaild/loop0]
+syslog       1 23970  0.0  0.0 263036  3412 ?        Ssl  15:00:22 00:00:01 /usr/sbin/rsyslogd -n
+root         2 26829  0.0  0.0      0     0 ?        I    15:39:59 00:00:00 [kworker/1:1]
+root         1 27865  0.1  0.7 111780 31988 ?        S<s  15:03:09 00:00:04 /lib/systemd/systemd-journald
+root         2 28795  0.0  0.0      0     0 ?        I    15:40:50 00:00:00 [kworker/0:1]
+root         1 28811  0.0  0.1  95276  5200 ?        Ss   15:40:50 00:00:00 /usr/sbin/apache2 -k start
+www-data 28811 28816  0.0  0.2 1310116 9604 ?        Sl   15:40:50 00:00:00 /usr/sbin/apache2 -k start
+www-data 28811 28817  1.4  0.2 1310460 9604 ?        Sl   15:40:50 00:00:02 /usr/sbin/apache2 -k start
+root         2 28961  0.0  0.0      0     0 ?        I    15:25:33 00:00:00 [kworker/0:0]
+root         2 29060  0.0  0.0      0     0 ?        I    15:25:34 00:00:00 [kworker/1:4]
+root         1 29120  0.2  0.5 1438052 21548 ?       Ssl  15:40:51 00:00:00 /usr/sbin/libvirtd
+root         2 29125  0.0  0.0      0     0 ?        I    15:25:36 00:00:00 [kworker/u4:3]
+root         1 29288  0.0  0.1 202968  5432 ?        Ssl  15:25:37 00:00:00 /usr/sbin/virtlogd
+libvirt+     1 29338  0.0  0.0  49964   364 ?        S    15:40:51 00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/lib/libvirt/libvirt_leaseshelper
+root     29338 29339  0.0  0.0  49936   364 ?        S    15:40:51 00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/lib/libvirt/libvirt_leaseshelper
+memcache     1 31469  0.0  0.1 427848  5760 ?        Ssl  15:41:46 00:00:00 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1 -P /var/run/memcached/memcached.pid
+root         1 31506  0.0  0.0  13184  1016 ?        Ss   15:41:46 00:00:00 /usr/bin/rsync --daemon --no-detach
+root         2 32042  0.0  0.0      0     0 ?        I    15:41:48 00:00:00 [kworker/0:2]
+root         2 32043  0.0  0.0      0     0 ?        I    15:41:48 00:00:00 [kworker/0:3]
+root         2 32047  0.0  0.0      0     0 ?        I    15:41:48 00:00:00 [kworker/0:4]
+ubuntu       1 32084  2.5  0.9 120960 38932 ?        Ss   15:41:48 00:00:02 /usr/bin/python3.6 /usr/local/bin/swift-object-server /etc/swift/object-server/1.conf -v
+ubuntu   32084 32657  0.3  0.8 1274256 35864 ?       Sl   15:41:50 00:00:00 /usr/bin/python3.6 /usr/local/bin/swift-object-server /etc/swift/object-server/1.conf -v
+ubuntu   32084 32658  7.4  0.8 1274256 35848 ?       Sl   15:41:50 00:00:06 /usr/bin/python3.6 /usr/local/bin/swift-object-server /etc/swift/object-server/1.conf -v
+root         2 32692  0.0  0.0      0     0 ?        I    15:41:50 00:00:00 [kworker/1:2]
+root         2 32693  0.0  0.0      0     0 ?        I    15:41:50 00:00:00 [kworker/1:3]
+root         2 32696  0.0  0.0      0     0 ?        I    15:41:50 00:00:00 [kworker/1:5]
+ubuntu       1 32701  2.4  0.9 121104 37240 ?        Ss   15:41:50 00:00:02 /usr/bin/python3.6 /usr/local/bin/swift-container-server /etc/swift/container-server/1.conf -v
+
+
+Network Dump
+============
+
+bridge link
+-----------
+
+6: virbr0-nic state DOWN : <BROADCAST,MULTICAST> mtu 1500 master virbr0 state disabled priority 32 cost 100 
+
+brctl show
+----------
+
+bridge name	bridge id		STP enabled	interfaces
+docker0		8000.02426a992a56	no		
+virbr0		8000.52540091045b	yes		virbr0-nic
+
+ip link show type bridge
+------------------------
+
+4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default 
+    link/ether 02:42:6a:99:2a:56 brd ff:ff:ff:ff:ff:ff
+5: virbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default qlen 1000
+    link/ether 52:54:00:91:04:5b brd ff:ff:ff:ff:ff:ff
+
+ip neigh
+--------
+
+15.213.136.1 dev ens3 lladdr 00:00:5e:00:01:01 REACHABLE
+15.213.141.234 dev ens3 lladdr fa:16:3e:63:d5:8d STALE
+15.213.141.10 dev ens3 lladdr 38:63:bb:44:11:14 REACHABLE
+169.16.1.65 dev br-ens2 lladdr 98:f2:b3:2a:0e:3c STALE
+
+ip addr
+-------
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel master ovs-system state UP group default qlen 1000
+    link/ether fa:16:3e:a9:51:83 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::f816:3eff:fea9:5183/64 scope link 
+       valid_lft forever preferred_lft forever
+3: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether fa:16:3e:1c:7a:10 brd ff:ff:ff:ff:ff:ff
+    inet 15.213.141.238/21 brd 15.213.143.255 scope global dynamic ens3
+       valid_lft 82539sec preferred_lft 82539sec
+    inet6 fe80::f816:3eff:fe1c:7a10/64 scope link 
+       valid_lft forever preferred_lft forever
+4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:6a:99:2a:56 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+5: virbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+    link/ether 52:54:00:91:04:5b brd ff:ff:ff:ff:ff:ff
+    inet 192.168.122.1/24 brd 192.168.122.255 scope global virbr0
+       valid_lft forever preferred_lft forever
+6: virbr0-nic: <BROADCAST,MULTICAST> mtu 1500 qdisc fq_codel master virbr0 state DOWN group default qlen 1000
+    link/ether 52:54:00:91:04:5b brd ff:ff:ff:ff:ff:ff
+7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 96:b3:f6:aa:b8:7e brd ff:ff:ff:ff:ff:ff
+8: br-int: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 2e:19:e6:a3:12:43 brd ff:ff:ff:ff:ff:ff
+9: br-ens2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/ether 02:a9:f5:a5:02:45 brd ff:ff:ff:ff:ff:ff
+    inet 169.16.1.126/24 brd 169.16.1.255 scope global br-ens2
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a9:f5ff:fea5:245/64 scope link 
+       valid_lft forever preferred_lft forever
+10: br-ex: <BROADCAST,MULTICAST> mtu 1400 qdisc noop state DOWN group default qlen 1000
+    link/ether ea:19:c8:7b:e7:41 brd ff:ff:ff:ff:ff:ff
+
+ip link
+-------
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: ens2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel master ovs-system state UP mode DEFAULT group default qlen 1000
+    link/ether fa:16:3e:a9:51:83 brd ff:ff:ff:ff:ff:ff
+3: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether fa:16:3e:1c:7a:10 brd ff:ff:ff:ff:ff:ff
+4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default 
+    link/ether 02:42:6a:99:2a:56 brd ff:ff:ff:ff:ff:ff
+5: virbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default qlen 1000
+    link/ether 52:54:00:91:04:5b brd ff:ff:ff:ff:ff:ff
+6: virbr0-nic: <BROADCAST,MULTICAST> mtu 1500 qdisc fq_codel master virbr0 state DOWN mode DEFAULT group default qlen 1000
+    link/ether 52:54:00:91:04:5b brd ff:ff:ff:ff:ff:ff
+7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 96:b3:f6:aa:b8:7e brd ff:ff:ff:ff:ff:ff
+8: br-int: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 2e:19:e6:a3:12:43 brd ff:ff:ff:ff:ff:ff
+9: br-ens2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/ether 02:a9:f5:a5:02:45 brd ff:ff:ff:ff:ff:ff
+10: br-ex: <BROADCAST,MULTICAST> mtu 1400 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether ea:19:c8:7b:e7:41 brd ff:ff:ff:ff:ff:ff
+
+ip route
+--------
+
+default via 15.213.136.1 dev ens3 proto dhcp src 15.213.141.238 metric 100 
+15.213.136.0/21 dev ens3 proto kernel scope link src 15.213.141.238 
+15.213.136.1 dev ens3 proto dhcp scope link src 15.213.141.238 metric 100 
+169.16.1.0/24 dev br-ens2 proto kernel scope link src 169.16.1.126 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+192.168.122.0/24 dev virbr0 proto kernel scope link src 192.168.122.1 linkdown 
+
+ip netns
+--------
+
+
+
+Open vSwitch Dump
+=================
+
+sudo ovs-vsctl show
+-------------------
+
+6653b3e2-bf91-41b1-9bd4-a2ba701394ce
+    Manager "ptcp:6640:127.0.0.1"
+    Bridge br-ex
+        Port br-ex
+            Interface br-ex
+                type: internal
+    Bridge br-int
+        Port br-int
+            Interface br-int
+                type: internal
+    Bridge "br-ens2"
+        Port "br-ens2"
+            Interface "br-ens2"
+                type: internal
+        Port "ens2"
+            Interface "ens2"
+    ovs_version: "2.9.5"
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 show br-ens2
+----------------------------------------------------------------------------------------------
+
+OFPT_FEATURES_REPLY (OF1.4) (xid=0x2): dpid:000002a9f5a50245
+n_tables:254, n_buffers:0
+capabilities: FLOW_STATS TABLE_STATS PORT_STATS GROUP_STATS QUEUE_STATS BUNDLES
+OFPST_PORT_DESC reply (OF1.4) (xid=0x3):
+ 1(ens2): addr:fa:16:3e:a9:51:83
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(br-ens2): addr:02:a9:f5:a5:02:45
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+OFPT_GET_CONFIG_REPLY (OF1.4) (xid=0x5): frags=normal miss_send_len=0
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 show br-ex
+--------------------------------------------------------------------------------------------
+
+OFPT_FEATURES_REPLY (OF1.4) (xid=0x2): dpid:0000ea19c87be741
+n_tables:254, n_buffers:0
+capabilities: FLOW_STATS TABLE_STATS PORT_STATS GROUP_STATS QUEUE_STATS BUNDLES
+OFPST_PORT_DESC reply (OF1.4) (xid=0x3):
+ LOCAL(br-ex): addr:ea:19:c8:7b:e7:41
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+OFPT_GET_CONFIG_REPLY (OF1.4) (xid=0x5): frags=normal miss_send_len=0
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 show br-int
+---------------------------------------------------------------------------------------------
+
+OFPT_FEATURES_REPLY (OF1.4) (xid=0x2): dpid:00002e19e6a31243
+n_tables:254, n_buffers:0
+capabilities: FLOW_STATS TABLE_STATS PORT_STATS GROUP_STATS QUEUE_STATS BUNDLES
+OFPST_PORT_DESC reply (OF1.4) (xid=0x3):
+ LOCAL(br-int): addr:2e:19:e6:a3:12:43
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+OFPT_GET_CONFIG_REPLY (OF1.4) (xid=0x5): frags=normal miss_send_len=0
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports-desc br-ens2
+---------------------------------------------------------------------------------------------------------
+
+OFPST_PORT_DESC reply (OF1.4) (xid=0x2):
+ 1(ens2): addr:fa:16:3e:a9:51:83
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(br-ens2): addr:02:a9:f5:a5:02:45
+     config:     0
+     state:      LIVE
+     speed: 0 Mbps now, 0 Mbps max
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports-desc br-ex
+-------------------------------------------------------------------------------------------------------
+
+OFPST_PORT_DESC reply (OF1.4) (xid=0x2):
+ LOCAL(br-ex): addr:ea:19:c8:7b:e7:41
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports-desc br-int
+--------------------------------------------------------------------------------------------------------
+
+OFPST_PORT_DESC reply (OF1.4) (xid=0x2):
+ LOCAL(br-int): addr:2e:19:e6:a3:12:43
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports br-ens2
+----------------------------------------------------------------------------------------------------
+
+OFPST_PORT reply (OF1.4) (xid=0x2): 2 ports
+  port LOCAL: rx pkts=289, bytes=67951, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=57, bytes=2826, drop=0, errs=0, coll=0
+           duration=440.588s
+  port  1: rx pkts=417962, bytes=1172104865, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=108998, bytes=7206086, drop=0, errs=0, coll=0
+           duration=434.960s
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports br-ex
+--------------------------------------------------------------------------------------------------
+
+OFPST_PORT reply (OF1.4) (xid=0x2): 1 ports
+  port LOCAL: rx pkts=0, bytes=0, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=0, bytes=0, drop=0, errs=0, coll=0
+           duration=435.567s
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-ports br-int
+---------------------------------------------------------------------------------------------------
+
+OFPST_PORT reply (OF1.4) (xid=0x2): 1 ports
+  port LOCAL: rx pkts=0, bytes=0, drop=0, errs=0, frame=0, over=0, crc=0
+           tx pkts=0, bytes=0, drop=0, errs=0, coll=0
+           duration=441.302s
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-flows br-ens2
+----------------------------------------------------------------------------------------------------
+
+OFPST_FLOW reply (OF1.4) (xid=0x2):
+ cookie=0x0, duration=440.656s, table=0, n_packets=346, n_bytes=74823, priority=0 actions=NORMAL
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-flows br-ex
+--------------------------------------------------------------------------------------------------
+
+OFPST_FLOW reply (OF1.4) (xid=0x2):
+ cookie=0x0, duration=435.638s, table=0, n_packets=0, n_bytes=0, priority=0 actions=NORMAL
+
+sudo ovs-ofctl --protocols=OpenFlow10,OpenFlow11,OpenFlow12,OpenFlow13,OpenFlow14 dump-flows br-int
+---------------------------------------------------------------------------------------------------
+
+OFPST_FLOW reply (OF1.4) (xid=0x2):
+ cookie=0x0, duration=441.362s, table=0, n_packets=0, n_bytes=0, priority=0 actions=NORMAL
+
+
+IP Tables Dump
+==============
+
+sudo iptables --line-numbers -L -nv -t filter
+---------------------------------------------
+
+Chain INPUT (policy ACCEPT 197K packets, 3380M bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        0     0 ACCEPT     udp  --  virbr0 *       0.0.0.0/0            0.0.0.0/0            udp dpt:53
+2        0     0 ACCEPT     tcp  --  virbr0 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:53
+3        0     0 ACCEPT     udp  --  virbr0 *       0.0.0.0/0            0.0.0.0/0            udp dpt:67
+4        0     0 ACCEPT     tcp  --  virbr0 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:67
+
+Chain FORWARD (policy DROP 0 packets, 0 bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        0     0 ACCEPT     all  --  *      virbr0  0.0.0.0/0            192.168.122.0/24     ctstate RELATED,ESTABLISHED
+2        0     0 ACCEPT     all  --  virbr0 *       192.168.122.0/24     0.0.0.0/0           
+3        0     0 ACCEPT     all  --  virbr0 virbr0  0.0.0.0/0            0.0.0.0/0           
+4        0     0 REJECT     all  --  *      virbr0  0.0.0.0/0            0.0.0.0/0            reject-with icmp-port-unreachable
+5        0     0 REJECT     all  --  virbr0 *       0.0.0.0/0            0.0.0.0/0            reject-with icmp-port-unreachable
+6        0     0 DOCKER-USER  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+7        0     0 DOCKER-ISOLATION-STAGE-1  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+8        0     0 ACCEPT     all  --  *      docker0  0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+9        0     0 DOCKER     all  --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+10       0     0 ACCEPT     all  --  docker0 !docker0  0.0.0.0/0            0.0.0.0/0           
+11       0     0 ACCEPT     all  --  docker0 docker0  0.0.0.0/0            0.0.0.0/0           
+
+Chain OUTPUT (policy ACCEPT 196K packets, 3380M bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        0     0 ACCEPT     udp  --  *      virbr0  0.0.0.0/0            0.0.0.0/0            udp dpt:68
+
+Chain DOCKER (1 references)
+num   pkts bytes target     prot opt in     out     source               destination         
+
+Chain DOCKER-ISOLATION-STAGE-1 (1 references)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        0     0 DOCKER-ISOLATION-STAGE-2  all  --  docker0 !docker0  0.0.0.0/0            0.0.0.0/0           
+2        0     0 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+Chain DOCKER-ISOLATION-STAGE-2 (1 references)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        0     0 DROP       all  --  *      docker0  0.0.0.0/0            0.0.0.0/0           
+2        0     0 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+Chain DOCKER-USER (1 references)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        0     0 RETURN     all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+sudo iptables --line-numbers -L -nv -t nat
+------------------------------------------
+
+Chain PREROUTING (policy ACCEPT 7508 packets, 504K bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+1     123K 7402K DOCKER     all  --  *      *       0.0.0.0/0            0.0.0.0/0            ADDRTYPE match dst-type LOCAL
+
+Chain INPUT (policy ACCEPT 6863 packets, 414K bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 229 packets, 13889 bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+1     1128 67680 DOCKER     all  --  *      *       0.0.0.0/0           !127.0.0.0/8          ADDRTYPE match dst-type LOCAL
+
+Chain POSTROUTING (policy ACCEPT 229 packets, 13889 bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        0     0 RETURN     all  --  *      *       192.168.122.0/24     224.0.0.0/24        
+2        0     0 RETURN     all  --  *      *       192.168.122.0/24     255.255.255.255     
+3        0     0 MASQUERADE  tcp  --  *      *       192.168.122.0/24    !192.168.122.0/24     masq ports: 1024-65535
+4        0     0 MASQUERADE  udp  --  *      *       192.168.122.0/24    !192.168.122.0/24     masq ports: 1024-65535
+5        0     0 MASQUERADE  all  --  *      *       192.168.122.0/24    !192.168.122.0/24    
+6        0     0 MASQUERADE  all  --  *      !docker0  172.17.0.0/16        0.0.0.0/0           
+
+Chain DOCKER (2 references)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        0     0 RETURN     all  --  docker0 *       0.0.0.0/0            0.0.0.0/0           
+
+sudo iptables --line-numbers -L -nv -t mangle
+---------------------------------------------
+
+Chain PREROUTING (policy ACCEPT 197K packets, 3380M bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+
+Chain INPUT (policy ACCEPT 197K packets, 3380M bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 196K packets, 3380M bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+
+Chain POSTROUTING (policy ACCEPT 196K packets, 3380M bytes)
+num   pkts bytes target     prot opt in     out     source               destination         
+1        0     0 CHECKSUM   udp  --  *      virbr0  0.0.0.0/0            0.0.0.0/0            udp dpt:68 CHECKSUM fill
+
+
+EB Tables Dump
+==============
+
+sudo ebtables -t filter -L
+--------------------------
+
+Bridge table: filter
+
+Bridge chain: INPUT, entries: 0, policy: ACCEPT
+
+Bridge chain: FORWARD, entries: 0, policy: ACCEPT
+
+Bridge chain: OUTPUT, entries: 0, policy: ACCEPT
+
+sudo ebtables -t nat -L
+-----------------------
+
+Bridge table: nat
+
+Bridge chain: PREROUTING, entries: 0, policy: ACCEPT
+
+Bridge chain: OUTPUT, entries: 0, policy: ACCEPT
+
+Bridge chain: POSTROUTING, entries: 0, policy: ACCEPT
+
+sudo ebtables -t broute -L
+--------------------------
+
+Bridge table: broute
+
+Bridge chain: BROUTING, entries: 0, policy: ACCEPT
+
+
+Compute consoles
+================
+
+
+nova-compute Guru Meditation Report
+===================================
+
+Skipping as nova-compute does not appear to be running
+
+neutron-dhcp-agent Guru Meditation Report
+=========================================
+
+Skipping as neutron-dhcp-agent does not appear to be running
+
+neutron-l3-agent Guru Meditation Report
+=======================================
+
+Skipping as neutron-l3-agent does not appear to be running
+
+neutron-linuxbridge-agent Guru Meditation Report
+================================================
+
+Skipping as neutron-linuxbridge-agent does not appear to be running
+
+neutron-metadata-agent Guru Meditation Report
+=============================================
+
+Skipping as neutron-metadata-agent does not appear to be running
+
+neutron-openvswitch-agent Guru Meditation Report
+================================================
+
+Skipping as neutron-openvswitch-agent does not appear to be running
+
+cinder-volume Guru Meditation Report
+====================================
+
+Skipping as cinder-volume does not appear to be running
+World dumping... see /tmp/devstack_logs/worlddump-2020-01-06-154319.txt for details
