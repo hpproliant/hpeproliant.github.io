@@ -68,6 +68,8 @@ html_end = """
 def create_html(path):
     file_display = ""
     table_data = ""
+    if os.path.islink(path) or 'logs2html.py' in path:
+        return
     if os.path.isdir(path):
         cmd_list = os.listdir(path)
         if len(cmd_list) == 0 or path.split('/')[-1] == '.git':
@@ -96,6 +98,7 @@ def create_html(path):
             with open(path, 'r') as f:
                 file_content = f.read()
         file_display = file_display + file_content + "</pre></p>"
+        os.remove(path)
 
     html_page = html_start + table_data + file_display + html_end
     if os.path.isdir(path):

@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+    <html lang = "en-US">
+    <head>
+        <meta charset = 'utf-8'>
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width,maximum-scale=2">
+        <!-- Begin Jekyll SEO tag v2.5.0 -->
+        <title> HPE Proliant CI LOGS </title>
+        <meta name = "generator" content = "Jekyll v3.8.5" />
+        <meta property = "og:title" content = "HPE Proliant CI LOGS" />
+        <meta property = "og:locale" content = "en_US" />
+        <link rel = "canonical" href = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:url" content = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:site_name" content = "HPE Proliant CI LOGS" />
+        <script type = "application/ld+json">
+        {"@type": "WebSite", "headline": "HPE Proliant CI LOGS", "url": "https://hpproliant.github.io/hpeproliant.github.io/", "name": "HPE Proliant CI LOGS", "@context": "http://schema.org"} </script>
+        <!-- End Jekyll SEO tag -->
+    </head>
+    <body>
+     <!-- HEADER -->
+        <div id = "header_wrap" class = "outer">
+           <header class = "inner">
+              <h1 id = "project_title"> HPE Proliant CI LOGS </h1>
+              <h2 id = "project_tagline"> </h2>
+            </header>
+        </div>
+        <!-- MAIN CONTENT -->
+        <hr>
+        <div id = "main_content_wrap" class = "outer">
+            <style type = "text/css" media = "screen">
+                .container {
+                    margin: 0px auto
+                    max-width: 80%
+                    text-align: center
+                 }
+                h1 {
+                    margin: 30px 0
+                    font-size: 4em
+                    line-height: 1
+                    letter-spacing: -1px
+                }
+                table, td, th {
+                    border: 0px solid black;
+                }
+            </style>
+            <div class = "container"> <p><pre>
+-- Logs begin at Tue 2019-12-24 02:05:46 UTC, end at Tue 2019-12-24 03:16:00 UTC. --
+Dec 24 03:13:05 ubuntu systemd[1]: Started Devstack devstack@s-container.service.
+Dec 24 03:13:06 ubuntu container-server[956]: Started child 1529 from parent 956
+Dec 24 03:13:06 ubuntu swift-container-server[956]: container-server: Started child 1529 from parent 956
+Dec 24 03:13:06 ubuntu container-server[956]: Started child 1530 from parent 956
+Dec 24 03:13:06 ubuntu swift-container-server[956]: container-server: Started child 1530 from parent 956
+Dec 24 03:13:41 ubuntu container-server[1530]: 127.0.0.1 - - [24/Dec/2019:03:13:41 +0000] "HEAD /sdb1/203/AUTH_317d07de65b947cf9044d184f50f6025/glance" 404 - "HEAD http://169.16.1.128:8080/v1/AUTH_317d07de65b947cf9044d184f50f6025/glance?format=json&states=listing" "txc0107e2819cc42a988317-005e018264" "proxy-server 3188" 0.0023 "-" 1530 0
+Dec 24 03:13:41 ubuntu swift-container-server[956]: container-server: 127.0.0.1 - - [24/Dec/2019:03:13:41 +0000] "HEAD /sdb1/203/AUTH_317d07de65b947cf9044d184f50f6025/glance" 404 - "HEAD http://169.16.1.128:8080/v1/AUTH_317d07de65b947cf9044d184f50f6025/glance?format=json&states=listing" "txc0107e2819cc42a988317-005e018264" "proxy-server 3188" 0.0023 "-" 1530 0
+Dec 24 03:13:41 ubuntu container-server[1530]: 127.0.0.1 - - [24/Dec/2019:03:13:41 +0000] "PUT /sdb1/203/AUTH_317d07de65b947cf9044d184f50f6025/glance" 201 - "PUT http://169.16.1.128:8080/v1/AUTH_317d07de65b947cf9044d184f50f6025/glance" "tx552887d6558d41ff9af9a-005e018265" "proxy-server 3188" 0.0933 "-" 1530 0
+Dec 24 03:13:41 ubuntu swift-container-server[956]: container-server: 127.0.0.1 - - [24/Dec/2019:03:13:41 +0000] "PUT /sdb1/203/AUTH_317d07de65b947cf9044d184f50f6025/glance" 201 - "PUT http://169.16.1.128:8080/v1/AUTH_317d07de65b947cf9044d184f50f6025/glance" "tx552887d6558d41ff9af9a-005e018265" "proxy-server 3188" 0.0933 "-" 1530 0
+Dec 24 03:13:41 ubuntu container-server[1530]: 127.0.0.1 - - [24/Dec/2019:03:13:41 +0000] "HEAD /sdb1/203/AUTH_317d07de65b947cf9044d184f50f6025/glance" 204 - "HEAD http://169.16.1.128:8080/v1/AUTH_317d07de65b947cf9044d184f50f6025/glance?format=json&states=listing" "tx46c92c35299d49528000c-005e018265" "proxy-server 3188" 0.0026 "-" 1530 0
+Dec 24 03:13:41 ubuntu swift-container-server[956]: container-server: 127.0.0.1 - - [24/Dec/2019:03:13:41 +0000] "HEAD /sdb1/203/AUTH_317d07de65b947cf9044d184f50f6025/glance" 204 - "HEAD http://169.16.1.128:8080/v1/AUTH_317d07de65b947cf9044d184f50f6025/glance?format=json&states=listing" "tx46c92c35299d49528000c-005e018265" "proxy-server 3188" 0.0026 "-" 1530 0
+Dec 24 03:13:51 ubuntu container-server[1530]: 127.0.0.1 - - [24/Dec/2019:03:13:51 +0000] "PUT /sdb1/203/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65-00001" 201 - "PUT http://169.16.1.128:8080/sdb1/232/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65-00001" "tx46c92c35299d49528000c-005e018265" "object-server 908" 0.0015 "-" 1530 0
+Dec 24 03:13:51 ubuntu swift-container-server[956]: container-server: 127.0.0.1 - - [24/Dec/2019:03:13:51 +0000] "PUT /sdb1/203/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65-00001" 201 - "PUT http://169.16.1.128:8080/sdb1/232/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65-00001" "tx46c92c35299d49528000c-005e018265" "object-server 908" 0.0015 "-" 1530 0
+Dec 24 03:14:03 ubuntu container-server[1530]: 127.0.0.1 - - [24/Dec/2019:03:14:03 +0000] "PUT /sdb1/203/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65-00002" 201 - "PUT http://169.16.1.128:8080/sdb1/58/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65-00002" "tx7c44f398fec144b694b06-005e01826f" "object-server 908" 0.0392 "-" 1530 0
+Dec 24 03:14:03 ubuntu swift-container-server[956]: container-server: 127.0.0.1 - - [24/Dec/2019:03:14:03 +0000] "PUT /sdb1/203/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65-00002" 201 - "PUT http://169.16.1.128:8080/sdb1/58/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65-00002" "tx7c44f398fec144b694b06-005e01826f" "object-server 908" 0.0392 "-" 1530 0
+Dec 24 03:14:10 ubuntu container-server[1529]: 127.0.0.1 - - [24/Dec/2019:03:14:10 +0000] "PUT /sdb1/203/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65-00003" 201 - "PUT http://169.16.1.128:8080/sdb1/464/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65-00003" "txa83a555b3f0c4c88acda5-005e01827b" "object-server 908" 0.0539 "-" 1529 0
+Dec 24 03:14:10 ubuntu swift-container-server[956]: container-server: 127.0.0.1 - - [24/Dec/2019:03:14:10 +0000] "PUT /sdb1/203/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65-00003" 201 - "PUT http://169.16.1.128:8080/sdb1/464/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65-00003" "txa83a555b3f0c4c88acda5-005e01827b" "object-server 908" 0.0539 "-" 1529 0
+Dec 24 03:14:10 ubuntu container-server[1529]: 127.0.0.1 - - [24/Dec/2019:03:14:10 +0000] "PUT /sdb1/203/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65" 201 - "PUT http://169.16.1.128:8080/sdb1/277/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65" "tx70c2a825dbd9437b879b0-005e018282" "object-server 908" 0.0013 "-" 1529 0
+Dec 24 03:14:10 ubuntu swift-container-server[956]: container-server: 127.0.0.1 - - [24/Dec/2019:03:14:10 +0000] "PUT /sdb1/203/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65" 201 - "PUT http://169.16.1.128:8080/sdb1/277/AUTH_317d07de65b947cf9044d184f50f6025/glance/c6566fdf-5199-4895-a3d9-e5d24cd56b65" "tx70c2a825dbd9437b879b0-005e018282" "object-server 908" 0.0013 "-" 1529 0
+</pre></p>
+            </div>
+        </div>
+        <!-- FOOTER  -->
+        <hr>
+        <div id="footer_wrap" class="outer">
+            <footer class="inner">
+                <p class="copyright">HPE Proliant CI LOGS maintained by iLO drivers team</p>
+            </footer>
+        </div>
+    </body>
+</html>

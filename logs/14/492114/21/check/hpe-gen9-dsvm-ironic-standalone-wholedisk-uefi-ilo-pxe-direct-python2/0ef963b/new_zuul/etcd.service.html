@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+    <html lang = "en-US">
+    <head>
+        <meta charset = 'utf-8'>
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width,maximum-scale=2">
+        <!-- Begin Jekyll SEO tag v2.5.0 -->
+        <title> HPE Proliant CI LOGS </title>
+        <meta name = "generator" content = "Jekyll v3.8.5" />
+        <meta property = "og:title" content = "HPE Proliant CI LOGS" />
+        <meta property = "og:locale" content = "en_US" />
+        <link rel = "canonical" href = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:url" content = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:site_name" content = "HPE Proliant CI LOGS" />
+        <script type = "application/ld+json">
+        {"@type": "WebSite", "headline": "HPE Proliant CI LOGS", "url": "https://hpproliant.github.io/hpeproliant.github.io/", "name": "HPE Proliant CI LOGS", "@context": "http://schema.org"} </script>
+        <!-- End Jekyll SEO tag -->
+    </head>
+    <body>
+     <!-- HEADER -->
+        <div id = "header_wrap" class = "outer">
+           <header class = "inner">
+              <h1 id = "project_title"> HPE Proliant CI LOGS </h1>
+              <h2 id = "project_tagline"> </h2>
+            </header>
+        </div>
+        <!-- MAIN CONTENT -->
+        <hr>
+        <div id = "main_content_wrap" class = "outer">
+            <style type = "text/css" media = "screen">
+                .container {
+                    margin: 0px auto
+                    max-width: 80%
+                    text-align: center
+                 }
+                h1 {
+                    margin: 30px 0
+                    font-size: 4em
+                    line-height: 1
+                    letter-spacing: -1px
+                }
+                table, td, th {
+                    border: 0px solid black;
+                }
+            </style>
+            <div class = "container"> <p><pre>
+-- Logs begin at Tue 2019-12-24 02:16:31 UTC, end at Tue 2019-12-24 04:51:08 UTC. --
+Dec 24 03:10:15 ubuntu systemd[1]: Starting Devstack devstack@etcd.service...
+Dec 24 03:10:15 ubuntu etcd[3879]: etcd Version: 3.3.12
+Dec 24 03:10:15 ubuntu etcd[3879]: Git SHA: d57e8b8
+Dec 24 03:10:15 ubuntu etcd[3879]: Go Version: go1.10.8
+Dec 24 03:10:15 ubuntu etcd[3879]: Go OS/Arch: linux/amd64
+Dec 24 03:10:15 ubuntu etcd[3879]: setting maximum number of CPUs to 2, total number of available CPUs is 2
+Dec 24 03:10:15 ubuntu etcd[3879]: listening for peers on http://0.0.0.0:2380
+Dec 24 03:10:15 ubuntu etcd[3879]: listening for client requests on 169.16.1.118:2379
+Dec 24 03:10:15 ubuntu etcd[3879]: name = ubuntu
+Dec 24 03:10:15 ubuntu etcd[3879]: data dir = /opt/stack/data/etcd
+Dec 24 03:10:15 ubuntu etcd[3879]: member dir = /opt/stack/data/etcd/member
+Dec 24 03:10:15 ubuntu etcd[3879]: heartbeat = 100ms
+Dec 24 03:10:15 ubuntu etcd[3879]: election = 1000ms
+Dec 24 03:10:15 ubuntu etcd[3879]: snapshot count = 100000
+Dec 24 03:10:15 ubuntu etcd[3879]: advertise client URLs = http://169.16.1.118:2379
+Dec 24 03:10:15 ubuntu etcd[3879]: initial advertise peer URLs = http://169.16.1.118:2380
+Dec 24 03:10:15 ubuntu etcd[3879]: initial cluster = ubuntu=http://169.16.1.118:2380
+Dec 24 03:10:15 ubuntu etcd[3879]: starting member f6178e662e89bc99 in cluster d52da37d6e2db356
+Dec 24 03:10:15 ubuntu etcd[3879]: f6178e662e89bc99 became follower at term 0
+Dec 24 03:10:15 ubuntu etcd[3879]: newRaft f6178e662e89bc99 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+Dec 24 03:10:15 ubuntu etcd[3879]: f6178e662e89bc99 became follower at term 1
+Dec 24 03:10:15 ubuntu etcd[3879]: simple token is not cryptographically signed
+Dec 24 03:10:15 ubuntu etcd[3879]: starting server... [version: 3.3.12, cluster version: to_be_decided]
+Dec 24 03:10:15 ubuntu etcd[3879]: f6178e662e89bc99 as single-node; fast-forwarding 9 ticks (election ticks 10)
+Dec 24 03:10:15 ubuntu etcd[3879]: added member f6178e662e89bc99 [http://169.16.1.118:2380] to cluster d52da37d6e2db356
+Dec 24 03:10:15 ubuntu etcd[3879]: f6178e662e89bc99 is starting a new election at term 1
+Dec 24 03:10:15 ubuntu etcd[3879]: f6178e662e89bc99 became candidate at term 2
+Dec 24 03:10:15 ubuntu etcd[3879]: f6178e662e89bc99 received MsgVoteResp from f6178e662e89bc99 at term 2
+Dec 24 03:10:15 ubuntu etcd[3879]: f6178e662e89bc99 became leader at term 2
+Dec 24 03:10:15 ubuntu etcd[3879]: raft.node: f6178e662e89bc99 elected leader f6178e662e89bc99 at term 2
+Dec 24 03:10:15 ubuntu etcd[3879]: published {Name:ubuntu ClientURLs:[http://169.16.1.118:2379]} to cluster d52da37d6e2db356
+Dec 24 03:10:15 ubuntu etcd[3879]: ready to serve client requests
+Dec 24 03:10:15 ubuntu etcd[3879]: INFO: 2019/12/24 03:10:15 dialing to target with scheme: ""
+Dec 24 03:10:15 ubuntu etcd[3879]: INFO: 2019/12/24 03:10:15 could not get resolver for scheme: ""
+Dec 24 03:10:15 ubuntu etcd[3879]: serving insecure client requests on 169.16.1.118:2379, this is strongly discouraged!
+Dec 24 03:10:15 ubuntu etcd[3879]: setting up the initial cluster version to 3.3
+Dec 24 03:10:15 ubuntu etcd[3879]: set the initial cluster version to 3.3
+Dec 24 03:10:15 ubuntu etcd[3879]: enabled capabilities for version 3.3
+Dec 24 03:10:15 ubuntu systemd[1]: Started Devstack devstack@etcd.service.
+</pre></p>
+            </div>
+        </div>
+        <!-- FOOTER  -->
+        <hr>
+        <div id="footer_wrap" class="outer">
+            <footer class="inner">
+                <p class="copyright">HPE Proliant CI LOGS maintained by iLO drivers team</p>
+            </footer>
+        </div>
+    </body>
+</html>

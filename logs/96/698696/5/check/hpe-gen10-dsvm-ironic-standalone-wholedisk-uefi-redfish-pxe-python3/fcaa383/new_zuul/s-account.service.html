@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+    <html lang = "en-US">
+    <head>
+        <meta charset = 'utf-8'>
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width,maximum-scale=2">
+        <!-- Begin Jekyll SEO tag v2.5.0 -->
+        <title> HPE Proliant CI LOGS </title>
+        <meta name = "generator" content = "Jekyll v3.8.5" />
+        <meta property = "og:title" content = "HPE Proliant CI LOGS" />
+        <meta property = "og:locale" content = "en_US" />
+        <link rel = "canonical" href = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:url" content = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:site_name" content = "HPE Proliant CI LOGS" />
+        <script type = "application/ld+json">
+        {"@type": "WebSite", "headline": "HPE Proliant CI LOGS", "url": "https://hpproliant.github.io/hpeproliant.github.io/", "name": "HPE Proliant CI LOGS", "@context": "http://schema.org"} </script>
+        <!-- End Jekyll SEO tag -->
+    </head>
+    <body>
+     <!-- HEADER -->
+        <div id = "header_wrap" class = "outer">
+           <header class = "inner">
+              <h1 id = "project_title"> HPE Proliant CI LOGS </h1>
+              <h2 id = "project_tagline"> </h2>
+            </header>
+        </div>
+        <!-- MAIN CONTENT -->
+        <hr>
+        <div id = "main_content_wrap" class = "outer">
+            <style type = "text/css" media = "screen">
+                .container {
+                    margin: 0px auto
+                    max-width: 80%
+                    text-align: center
+                 }
+                h1 {
+                    margin: 30px 0
+                    font-size: 4em
+                    line-height: 1
+                    letter-spacing: -1px
+                }
+                table, td, th {
+                    border: 0px solid black;
+                }
+            </style>
+            <div class = "container"> <p><pre>
+-- Logs begin at Mon 2019-12-16 19:12:50 UTC, end at Mon 2019-12-16 20:49:38 UTC. --
+Dec 16 20:25:31 ubuntu systemd[1]: Started Devstack devstack@s-account.service.
+Dec 16 20:25:33 ubuntu account-server[2589]: Started child 3103 from parent 2589
+Dec 16 20:25:33 ubuntu swift-account-server[2589]: account-server: Started child 3103 from parent 2589
+Dec 16 20:25:33 ubuntu account-server[2589]: Started child 3105 from parent 2589
+Dec 16 20:25:33 ubuntu swift-account-server[2589]: account-server: Started child 3105 from parent 2589
+Dec 16 20:25:45 ubuntu account-server[3103]: 127.0.0.1 - - [16/Dec/2019:20:25:45 +0000] "HEAD /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 404 - "HEAD http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4?format=json" "tx49fc44c0e60d46c182487-005df7e849" "proxy-server 4187" 0.0029 "-" 3103 -
+Dec 16 20:25:45 ubuntu swift-account-server[2589]: account-server: 127.0.0.1 - - [16/Dec/2019:20:25:45 +0000] "HEAD /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 404 - "HEAD http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4?format=json" "tx49fc44c0e60d46c182487-005df7e849" "proxy-server 4187" 0.0029 "-" 3103 -
+Dec 16 20:25:46 ubuntu account-server[3105]: 127.0.0.1 - - [16/Dec/2019:20:25:46 +0000] "POST /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 404 - "POST http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4" "tx49fc44c0e60d46c182487-005df7e849" "proxy-server 4187" 0.0019 "-" 3105 -
+Dec 16 20:25:46 ubuntu swift-account-server[2589]: account-server: 127.0.0.1 - - [16/Dec/2019:20:25:46 +0000] "POST /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 404 - "POST http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4" "tx49fc44c0e60d46c182487-005df7e849" "proxy-server 4187" 0.0019 "-" 3105 -
+Dec 16 20:25:47 ubuntu account-server[3103]: 127.0.0.1 - - [16/Dec/2019:20:25:47 +0000] "PUT /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 201 - "-" "tx49fc44c0e60d46c182487-005df7e849" "-" 0.2737 "-" 3103 -
+Dec 16 20:25:47 ubuntu swift-account-server[2589]: account-server: 127.0.0.1 - - [16/Dec/2019:20:25:47 +0000] "PUT /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 201 - "-" "tx49fc44c0e60d46c182487-005df7e849" "-" 0.2737 "-" 3103 -
+Dec 16 20:25:47 ubuntu account-server[3103]: 127.0.0.1 - - [16/Dec/2019:20:25:47 +0000] "POST /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 204 - "POST http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4" "tx49fc44c0e60d46c182487-005df7e849" "proxy-server 4187" 0.2095 "-" 3103 -
+Dec 16 20:25:47 ubuntu swift-account-server[2589]: account-server: 127.0.0.1 - - [16/Dec/2019:20:25:47 +0000] "POST /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 204 - "POST http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4" "tx49fc44c0e60d46c182487-005df7e849" "proxy-server 4187" 0.2095 "-" 3103 -
+Dec 16 20:26:08 ubuntu account-server[3103]: 127.0.0.1 - - [16/Dec/2019:20:26:08 +0000] "HEAD /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 204 - "HEAD http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4?format=json" "tx3b919d2514f84d7eb89de-005df7e860" "proxy-server 4187" 0.0032 "-" 3103 -
+Dec 16 20:26:08 ubuntu swift-account-server[2589]: account-server: 127.0.0.1 - - [16/Dec/2019:20:26:08 +0000] "HEAD /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 204 - "HEAD http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4?format=json" "tx3b919d2514f84d7eb89de-005df7e860" "proxy-server 4187" 0.0032 "-" 3103 -
+Dec 16 20:26:14 ubuntu swift-account-server[2589]: account-server: 127.0.0.1 - - [16/Dec/2019:20:26:14 +0000] "PUT /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4/glance" 201 - "PUT http://127.0.0.1:6611/sdb1/367/AUTH_55403258a49a4ef0b8efafa1341e59b4/glance" "tx363b91a821324e3e92833-005df7e861" "container-server 2477" 0.0025 "-" 3103 0
+Dec 16 20:26:14 ubuntu account-server[3103]: 127.0.0.1 - - [16/Dec/2019:20:26:14 +0000] "PUT /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4/glance" 201 - "PUT http://127.0.0.1:6611/sdb1/367/AUTH_55403258a49a4ef0b8efafa1341e59b4/glance" "tx363b91a821324e3e92833-005df7e861" "container-server 2477" 0.0025 "-" 3103 0
+Dec 16 20:27:25 ubuntu account-server[3103]: 127.0.0.1 - - [16/Dec/2019:20:27:25 +0000] "HEAD /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 204 - "HEAD http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4?format=json" "tx4e29eae489cb489091181-005df7e8ab" "proxy-server 4187" 1.4979 "-" 3103 -
+Dec 16 20:27:25 ubuntu swift-account-server[2589]: account-server: 127.0.0.1 - - [16/Dec/2019:20:27:25 +0000] "HEAD /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 204 - "HEAD http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4?format=json" "tx4e29eae489cb489091181-005df7e8ab" "proxy-server 4187" 1.4979 "-" 3103 -
+Dec 16 20:28:29 ubuntu swift-account-server[2589]: account-server: 127.0.0.1 - - [16/Dec/2019:20:28:29 +0000] "HEAD /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 204 - "HEAD http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4?format=json" "tx1d87629ade194c5aace7b-005df7e8ed" "proxy-server 4187" 0.0030 "-" 3103 -
+Dec 16 20:28:29 ubuntu account-server[3103]: 127.0.0.1 - - [16/Dec/2019:20:28:29 +0000] "HEAD /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 204 - "HEAD http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4?format=json" "tx1d87629ade194c5aace7b-005df7e8ed" "proxy-server 4187" 0.0030 "-" 3103 -
+Dec 16 20:33:25 ubuntu account-server[3103]: 127.0.0.1 - - [16/Dec/2019:20:33:25 +0000] "HEAD /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 204 - "HEAD http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4?format=json" "tx18ad874cee274b00b13be-005df7ea14" "proxy-server 4187" 0.0173 "-" 3103 -
+Dec 16 20:33:25 ubuntu swift-account-server[2589]: account-server: 127.0.0.1 - - [16/Dec/2019:20:33:25 +0000] "HEAD /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 204 - "HEAD http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4?format=json" "tx18ad874cee274b00b13be-005df7ea14" "proxy-server 4187" 0.0173 "-" 3103 -
+Dec 16 20:34:31 ubuntu account-server[3103]: 127.0.0.1 - - [16/Dec/2019:20:34:31 +0000] "HEAD /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 204 - "HEAD http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4?format=json" "tx3552c819543d427088be7-005df7ea57" "proxy-server 4187" 0.0031 "-" 3103 -
+Dec 16 20:34:31 ubuntu swift-account-server[2589]: account-server: 127.0.0.1 - - [16/Dec/2019:20:34:31 +0000] "HEAD /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 204 - "HEAD http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4?format=json" "tx3552c819543d427088be7-005df7ea57" "proxy-server 4187" 0.0031 "-" 3103 -
+Dec 16 20:36:09 ubuntu account-server[3103]: 127.0.0.1 - - [16/Dec/2019:20:36:09 +0000] "HEAD /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 204 - "HEAD http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4?format=json" "tx7b8612ac75ae478ab816f-005df7eab9" "proxy-server 4187" 0.0034 "-" 3103 -
+Dec 16 20:36:09 ubuntu swift-account-server[2589]: account-server: 127.0.0.1 - - [16/Dec/2019:20:36:09 +0000] "HEAD /sdb1/52/AUTH_55403258a49a4ef0b8efafa1341e59b4" 204 - "HEAD http://169.16.1.120:8080/v1/AUTH_55403258a49a4ef0b8efafa1341e59b4?format=json" "tx7b8612ac75ae478ab816f-005df7eab9" "proxy-server 4187" 0.0034 "-" 3103 -
+</pre></p>
+            </div>
+        </div>
+        <!-- FOOTER  -->
+        <hr>
+        <div id="footer_wrap" class="outer">
+            <footer class="inner">
+                <p class="copyright">HPE Proliant CI LOGS maintained by iLO drivers team</p>
+            </footer>
+        </div>
+    </body>
+</html>
