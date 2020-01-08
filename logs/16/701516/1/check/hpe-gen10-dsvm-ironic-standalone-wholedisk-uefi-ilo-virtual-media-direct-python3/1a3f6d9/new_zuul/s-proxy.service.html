@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+    <html lang = "en-US">
+    <head>
+        <meta charset = 'utf-8'>
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width,maximum-scale=2">
+        <!-- Begin Jekyll SEO tag v2.5.0 -->
+        <title> HPE Proliant CI LOGS </title>
+        <meta name = "generator" content = "Jekyll v3.8.5" />
+        <meta property = "og:title" content = "HPE Proliant CI LOGS" />
+        <meta property = "og:locale" content = "en_US" />
+        <link rel = "canonical" href = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:url" content = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:site_name" content = "HPE Proliant CI LOGS" />
+        <script type = "application/ld+json">
+        {"@type": "WebSite", "headline": "HPE Proliant CI LOGS", "url": "https://hpproliant.github.io/hpeproliant.github.io/", "name": "HPE Proliant CI LOGS", "@context": "http://schema.org"} </script>
+        <!-- End Jekyll SEO tag -->
+    </head>
+    <body>
+     <!-- HEADER -->
+        <div id = "header_wrap" class = "outer">
+           <header class = "inner">
+              <h1 id = "project_title"> HPE Proliant CI LOGS </h1>
+              <h2 id = "project_tagline"> </h2>
+            </header>
+        </div>
+        <!-- MAIN CONTENT -->
+        <hr>
+        <div id = "main_content_wrap" class = "outer">
+            <style type = "text/css" media = "screen">
+                .container {
+                    margin: 0px auto
+                    max-width: 80%
+                    text-align: center
+                 }
+                h1 {
+                    margin: 30px 0
+                    font-size: 4em
+                    line-height: 1
+                    letter-spacing: -1px
+                }
+                table, td, th {
+                    border: 0px solid black;
+                }
+            </style>
+            <div class = "container"> <p><pre>
+-- Logs begin at Wed 2020-01-08 14:28:54 UTC, end at Wed 2020-01-08 15:40:49 UTC. --
+Jan 08 15:37:49 ubuntu systemd[1]: Started Devstack devstack@s-proxy.service.
+Jan 08 15:37:52 ubuntu proxy-server[2242]: Loaded override config for (default): ProxyOverrideOptions({}, {'sorting_method': 'shuffle', 'read_affinity': '', 'write_affinity': '', 'write_affinity_node_count': '2 * replicas', 'write_affinity_handoff_delete_count': None})
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: proxy-server: Loaded override config for (default): ProxyOverrideOptions({}, {'sorting_method': 'shuffle', 'read_affinity': '', 'write_affinity': '', 'write_affinity_node_count': '2 * replicas', 'write_affinity_handoff_delete_count': None})
+Jan 08 15:37:52 ubuntu proxy-server[2242]: Pipeline is "catch_errors gatekeeper healthcheck proxy-logging cache listing_formats container_sync bulk tempurl ratelimit crossdomain authtoken keystoneauth tempauth formpost staticweb copy container-quotas account-quotas slo dlo versioned_writes symlink proxy-logging proxy-server"
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: proxy-server: Pipeline is "catch_errors gatekeeper healthcheck proxy-logging cache listing_formats container_sync bulk tempurl ratelimit crossdomain authtoken keystoneauth tempauth formpost staticweb copy container-quotas account-quotas slo dlo versioned_writes symlink proxy-logging proxy-server"
+Jan 08 15:37:52 ubuntu proxy-server[2242]: Starting Keystone auth_token middleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: proxy-server: Starting Keystone auth_token middleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: The option "bind_ip" is not known to keystonemiddleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: The option "bind_port" is not known to keystonemiddleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: The option "swift_dir" is not known to keystonemiddleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: The option "user" is not known to keystonemiddleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: The option "workers" is not known to keystonemiddleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: The option "log_level" is not known to keystonemiddleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: The option "log_name" is not known to keystonemiddleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: The option "project_domain_name" is not known to keystonemiddleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: The option "project_name" is not known to keystonemiddleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: The option "user_domain_name" is not known to keystonemiddleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: The option "password" is not known to keystonemiddleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: The option "username" is not known to keystonemiddleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: The option "auth_url" is not known to keystonemiddleware
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: The option "__name__" is not known to keystonemiddleware
+Jan 08 15:37:52 ubuntu proxy-server[2242]: AuthToken middleware is set with keystone_authtoken.service_token_roles_required set to False. This is backwards compatible but deprecated behaviour. Please set this to True.
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: proxy-server: AuthToken middleware is set with keystone_authtoken.service_token_roles_required set to False. This is backwards compatible but deprecated behaviour. Please set this to True.
+Jan 08 15:37:52 ubuntu proxy-server[2242]: Configuring www_authenticate_uri to point to the public identity endpoint is required; clients may not be able to authenticate against an admin endpoint
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: proxy-server: Configuring www_authenticate_uri to point to the public identity endpoint is required; clients may not be able to authenticate against an admin endpoint
+Jan 08 15:37:52 ubuntu proxy-server[2242]: Started child 2426 from parent 2242
+Jan 08 15:37:52 ubuntu swift-proxy-server[2242]: proxy-server: Started child 2426 from parent 2242
+Jan 08 15:37:53 ubuntu proxy-server[2426]: Loaded override config for (default): ProxyOverrideOptions({}, {'sorting_method': 'shuffle', 'read_affinity': '', 'write_affinity': '', 'write_affinity_node_count': '2 * replicas', 'write_affinity_handoff_delete_count': None})
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: Loaded override config for (default): ProxyOverrideOptions({}, {'sorting_method': 'shuffle', 'read_affinity': '', 'write_affinity': '', 'write_affinity_node_count': '2 * replicas', 'write_affinity_handoff_delete_count': None})
+Jan 08 15:37:53 ubuntu proxy-server[2426]: Pipeline is "catch_errors gatekeeper healthcheck proxy-logging cache listing_formats container_sync bulk tempurl ratelimit crossdomain authtoken keystoneauth tempauth formpost staticweb copy container-quotas account-quotas slo dlo versioned_writes symlink proxy-logging proxy-server"
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: Pipeline is "catch_errors gatekeeper healthcheck proxy-logging cache listing_formats container_sync bulk tempurl ratelimit crossdomain authtoken keystoneauth tempauth formpost staticweb copy container-quotas account-quotas slo dlo versioned_writes symlink proxy-logging proxy-server"
+Jan 08 15:37:53 ubuntu proxy-server[2426]: Starting Keystone auth_token middleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: Starting Keystone auth_token middleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: STDERR: The option "bind_ip" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: STDERR: The option "bind_ip" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: STDERR: The option "bind_port" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: STDERR: The option "bind_port" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: STDERR: The option "swift_dir" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: STDERR: The option "swift_dir" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: STDERR: The option "user" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: STDERR: The option "user" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: STDERR: The option "workers" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: STDERR: The option "workers" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: STDERR: The option "log_level" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: STDERR: The option "log_level" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: STDERR: The option "log_name" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: STDERR: The option "log_name" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: STDERR: The option "project_domain_name" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: STDERR: The option "project_domain_name" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: STDERR: The option "project_name" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: STDERR: The option "project_name" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: STDERR: The option "user_domain_name" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: STDERR: The option "user_domain_name" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: STDERR: The option "password" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: STDERR: The option "password" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: STDERR: The option "username" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: STDERR: The option "username" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: STDERR: The option "auth_url" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: STDERR: The option "auth_url" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: STDERR: The option "__name__" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: STDERR: The option "__name__" is not known to keystonemiddleware
+Jan 08 15:37:53 ubuntu proxy-server[2426]: AuthToken middleware is set with keystone_authtoken.service_token_roles_required set to False. This is backwards compatible but deprecated behaviour. Please set this to True.
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: AuthToken middleware is set with keystone_authtoken.service_token_roles_required set to False. This is backwards compatible but deprecated behaviour. Please set this to True.
+Jan 08 15:37:53 ubuntu proxy-server[2426]: Configuring www_authenticate_uri to point to the public identity endpoint is required; clients may not be able to authenticate against an admin endpoint
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: Configuring www_authenticate_uri to point to the public identity endpoint is required; clients may not be able to authenticate against an admin endpoint
+Jan 08 15:37:53 ubuntu proxy-server[2426]: Deferring reject downstream
+Jan 08 15:37:53 ubuntu proxy-server[2426]: Received request from
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: Deferring reject downstream
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: Received request from
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: Authorizing as anonymous (txn: tx63fecc00e5b9456ca324b-005e15f751)
+Jan 08 15:37:53 ubuntu proxy-server[2426]: Authorizing as anonymous (txn: tx63fecc00e5b9456ca324b-005e15f751)
+Jan 08 15:37:53 ubuntu swift-proxy-server[2242]: proxy-server: 169.16.1.124 169.16.1.124 08/Jan/2020/15/37/53 GET /info HTTP/1.0 200 - curl/7.58.0 - - 1631 - tx63fecc00e5b9456ca324b-005e15f751 - 0.0043 - - 1578497873.508661270 1578497873.512958050 -
+Jan 08 15:37:53 ubuntu proxy-server[2426]: 169.16.1.124 169.16.1.124 08/Jan/2020/15/37/53 GET /info HTTP/1.0 200 - curl/7.58.0 - - 1631 - tx63fecc00e5b9456ca324b-005e15f751 - 0.0043 - - 1578497873.508661270 1578497873.512958050 -
+Jan 08 15:37:58 ubuntu proxy-server[2426]: Deferring reject downstream
+Jan 08 15:37:58 ubuntu swift-proxy-server[2242]: proxy-server: Deferring reject downstream
+Jan 08 15:37:58 ubuntu proxy-server[2426]: Received request from
+Jan 08 15:37:58 ubuntu swift-proxy-server[2242]: proxy-server: Received request from
+Jan 08 15:37:58 ubuntu proxy-server[2426]: Authorizing from an overriding middleware (txn: tx7041dcdc7ef1432faf508-005e15f756)
+Jan 08 15:37:58 ubuntu swift-proxy-server[2242]: proxy-server: Authorizing from an overriding middleware (txn: tx7041dcdc7ef1432faf508-005e15f756)
+Jan 08 15:37:58 ubuntu proxy-server[2426]: - - 08/Jan/2020/15/37/58 HEAD /v1/AUTH_891374a6e0c14011896fc878070b0d40%3Fformat%3Djson HTTP/1.0 200 - Swift - - - - tx7041dcdc7ef1432faf508-005e15f756 - 0.0165 RL - 1578497878.461110830 1578497878.477625608 -
+Jan 08 15:37:58 ubuntu swift-proxy-server[2242]: proxy-server: - - 08/Jan/2020/15/37/58 HEAD /v1/AUTH_891374a6e0c14011896fc878070b0d40%3Fformat%3Djson HTTP/1.0 200 - Swift - - - - tx7041dcdc7ef1432faf508-005e15f756 - 0.0165 RL - 1578497878.461110830 1578497878.477625608 -
+Jan 08 15:37:58 ubuntu proxy-server[2426]: Authenticating user token
+Jan 08 15:37:58 ubuntu swift-proxy-server[2242]: proxy-server: Authenticating user token
+Jan 08 15:37:58 ubuntu keystoneauth.session[2426]: REQ: curl -g -i --cacert "/opt/stack/data/ca-bundle.pem" -X GET http://169.16.1.124/identity -H "Accept: application/json" -H "User-Agent: keystonemiddleware.auth_token/8.0.0 keystoneauth1/3.18.0 python-requests/2.22.0 CPython/3.6.9"
+Jan 08 15:37:58 ubuntu swift-proxy-server[2242]: keystoneauth.session: REQ: curl -g -i --cacert "/opt/stack/data/ca-bundle.pem" -X GET http://169.16.1.124/identity -H "Accept: application/json" -H "User-Agent: keystonemiddleware.auth_token/8.0.0 keystoneauth1/3.18.0 python-requests/2.22.0 CPython/3.6.9"
+Jan 08 15:37:58 ubuntu keystoneauth.session[2426]: RESP: [300] Connection: close Content-Length: 271 Content-Type: application/json Date: Wed, 08 Jan 2020 15:37:58 GMT Location: http://169.16.1.124/identity/v3/ Server: Apache/2.4.29 (Ubuntu) Vary: X-Auth-Token x-openstack-request-id: req-9e1cfcaa-8c00-40b4-95fc-abfe19f4ed86
+Jan 08 15:37:58 ubuntu swift-proxy-server[2242]: keystoneauth.session: RESP: [300] Connection: close Content-Length: 271 Content-Type: application/json Date: Wed, 08 Jan 2020 15:37:58 GMT Location: http://169.16.1.124/identity/v3/ Server: Apache/2.4.29 (Ubuntu) Vary: X-Auth-Token x-openstack-request-id: req-9e1cfcaa-8c00-40b4-95fc-abfe19f4ed86
+Jan 08 15:37:58 ubuntu keystoneauth.session[2426]: RESP BODY: {"versions": {"values": [{"id": "v3.13", "status": "stable", "updated": "2019-07-19T00:00:00Z", "links": [{"rel": "self", "href": "http://169.16.1.124/identity/v3/"}], "media-types": [{"base": "application/json", "type": "application/vnd.openstack.identity-v3+json"}]}]}}
+Jan 08 15:37:58 ubuntu swift-proxy-server[2242]: keystoneauth.session: RESP BODY: {"versions": {"values": [{"id": "v3.13", "status": "stable", "updated": "2019-07-19T00:00:00Z", "links": [{"rel": "self", "href": "http://169.16.1.124/identity/v3/"}], "media-types": [{"base": "application/json", "type": "application/vnd.openstack.identity-v3+json"}]}]}}
+Jan 08 15:37:58 ubuntu keystoneauth.session[2426]: GET call to http://169.16.1.124/identity used request id req-9e1cfcaa-8c00-40b4-95fc-abfe19f4ed86
+Jan 08 15:37:58 ubuntu swift-proxy-server[2242]: keystoneauth.session: GET call to http://169.16.1.124/identity used request id req-9e1cfcaa-8c00-40b4-95fc-abfe19f4ed86
+Jan 08 15:37:58 ubuntu keystoneauth.identity.v3.base[2426]: Making authentication request to http://169.16.1.124/identity/v3/auth/tokens
+Jan 08 15:37:58 ubuntu swift-proxy-server[2242]: keystoneauth.identity.v3.base: Making authentication request to http://169.16.1.124/identity/v3/auth/tokens
+Jan 08 15:37:58 ubuntu keystoneauth.identity.v3.base[2426]: {"token": {"methods": ["password"], "user": {"domain": {"id": "default", "name": "Default"}, "id": "3970f60717864846b0cf6b43d3862b99", "name": "swift", "password_expires_at": null}, "audit_ids": ["fhpJaOmEQbqg6-v9cbqjxw"], "expires_at": "2020-01-08T16:37:58.000000Z", "issued_at": "2020-01-08T15:37:58.000000Z", "project": {"domain": {"id": "default", "name": "Default"}, "id": "891374a6e0c14011896fc878070b0d40", "name": "service"}, "is_domain": false, "roles": [{"id": "b263895ec339487d8a5a47267f666efd", "name": "reader"}, {"id": "8607df8ad9754cd7a00fcce0f7208dfb", "name": "member"}, {"id": "099c924547984576bb88e8d55cf801a6", "name": "service"}, {"id": "6aecc64fa7b24b07b8a4491a1cb9ef85", "name": "admin"}], "catalog": [{"endpoints": [{"id": "06aa751fbf0540ceb89185e2349828f1", "interface": "admin", "region_id": "RegionOne", "url": "http://169.16.1.124/identity", "region": "RegionOne"}, {"id": "598e93fd518a4ba18dfd72688315a60f", "interface": "public", "region_id": "RegionOne", "url": "http://169.16.1.124/identity", "region": "RegionOne"}], "id": "39ab5628575643d0a4b0fb1e707694e0", "type": "identity", "name": "keystone"}, {"endpoints": [{"id": "3ffe7baf78704f25a7c57f1a4b24f6e8", "interface": "public", "region_id": "RegionOne", "url": "http://169.16.1.124:8080/v1/AUTH_891374a6e0c14011896fc878070b0d40", "region": "RegionOne"}, {"id": "a8ceb0e19c8e430abaa9bffc423f507b", "interface": "admin", "region_id": "RegionOne", "url": "http://169.16.1.124:8080", "region": "RegionOne"}], "id": "42c775a2fca544cfbca7c030d4ddc818", "type": "object-store", "name": "swift"}, {"endpoints": [{"id": "3e88f9d3befe417fa60c033f8d66de73", "interface": "public", "region_id": "RegionOne", "url": "http://169.16.1.124/image", "region": "RegionOne"}], "id": "5608cab4eff04894a48e4663a123e218", "type": "image", "name": "glance"}, {"endpoints": [{"id": "3c08888e355e45a7a052fa244bb49e79", "interface": "public", "region_id": "RegionOne", "url": "http://169.16.1.124/baremetal", "region": "RegionOne"}], "id": "5de515b1db0f4da5869b5035db975dc3", "type": "baremetal", "name": "ironic"}, {"endpoints": [{"id": "dac0d2e7265d488d98549d7fdc2a3b48", "interface": "public", "region_id": "RegionOne", "url": "http://169.16.1.124:9696/", "region": "RegionOne"}], "id": "cfe6efd04b8a44dcb591068900e1d0d7", "type": "network", "name": "neutron"}]}}
+Jan 08 15:37:58 ubuntu swift-proxy-server[2242]: keystoneauth.identity.v3.base: {"token": {"methods": ["password"], "user": {"domain": {"id": "default", "name": "Default"}, "id": "3970f60717864846b0cf6b43d3862b99", "name": "swift", "password_expires_at": null}, "audit_ids": ["fhpJaOmEQbqg6-v9cbqjxw"], "expires_at": "2020-01-08T16:37:58.000000Z", "issued_at": "2020-01-08T15:37:58.000000Z", "project": {"domain": {"id": "default", "name": "Default"}, "id": "891374a6e0c14011896fc878070b0d40", "name": "service"}, "is_domain": false, "roles": [{"id": "b263895ec339487d8a5a47267f666efd", "name": "reader"}, {"id": "8607df8ad9754cd7a00fcce0f7208dfb", "name": "member"}, {"id": "099c924547984576bb88e8d55cf801a6", "name": "service"}, {"id": "6aecc64fa7b24b07b8a4491a1cb9ef85", "name": "admin"}], "catalog": [{"endpoints": [{"id": "06aa751fbf0540ceb89185e2349828f1", "interface": "admin", "region_id": "RegionOne", "url": "http://169.16.1.124/identity", "region": "RegionOne"}, {"id": "598e93fd518a4ba18dfd72688315a60f", "interface": "public", "region_id": "RegionOne", "url": "http://169.16.1.124/identity", "region": "RegionOne"}], "id": "39ab5628575643d0a4b0fb1e707694e0", "type": "identity", "name": "keystone"}, {"endpoints": [{"id": "3ffe7baf78704f25a7c57f1a4b24f6e8", "interface": "public", "region_id": "RegionOne", "url": "http://169.16.1.124:8080/v1/AUTH_891374a6e0c14011896fc878070b0d40", "region": "RegionOne"}, {"id": "a8ceb0e19c8e430abaa9bffc423f507b", "interface": "admin", "region_id": "RegionOne", "url": "http://169.16.1.124:8080", "region": "RegionOne"}], "id": "42c775a2fca544cfbca7c030d4ddc818", "type": "object-store", "name": "swift"}, {"endpoints": [{"id": "3e88f9d3befe417fa60c033f8d66de73", "interface": "public", "region_id": "RegionOne", "url": "http://169.16.1.124/image", "region": "RegionOne"}], "id": "5608cab4eff04894a48e4663a123e218", "type": "image", "name": "glance"}, {"endpoints": [{"id": "3c08888e355e45a7a052fa244bb49e79", "interface": "public", "region_id": "RegionOne", "url": "http://169.16.1.124/baremetal", "region": "RegionOne"}], "id": "5de515b1db0f4da5869b5035db975dc3", "type": "baremetal", "name": "ironic"}, {"endpoints": [{"id": "dac0d2e7265d488d98549d7fdc2a3b48", "interface": "public", "region_id": "RegionOne", "url": "http://169.16.1.124:9696/", "region": "RegionOne"}], "id": "cfe6efd04b8a44dcb591068900e1d0d7", "type": "network", "name": "neutron"}]}}
+Jan 08 15:37:58 ubuntu proxy-server[2426]: Auth Token confirmed use of (3, 0) apis
+Jan 08 15:37:58 ubuntu swift-proxy-server[2242]: proxy-server: Auth Token confirmed use of (3, 0) apis
+Jan 08 15:37:58 ubuntu keystoneauth.session[2426]: REQ: curl -g -i --cacert "/opt/stack/data/ca-bundle.pem" -X GET http://169.16.1.124/identity/v3/auth/tokens?nocatalog -H "Accept: application/json" -H "OpenStack-Identity-Access-Rules: 1" -H "User-Agent: python-keystoneclient" -H "X-Auth-Token: {SHA256}98b81840893c2eb591f2b6bb8cf75dbfdc63a10fa4f61f1a972742c0b395a905" -H "X-Subject-Token: {SHA256}0339eb21ff34edd618bb7d53f1e8a4666b0cf178d5d7336555670e520eacfcab"
+Jan 08 15:37:58 ubuntu swift-proxy-server[2242]: keystoneauth.session: REQ: curl -g -i --cacert "/opt/stack/data/ca-bundle.pem" -X GET http://169.16.1.124/identity/v3/auth/tokens?nocatalog -H "Accept: application/json" -H "OpenStack-Identity-Access-Rules: 1" -H "User-Agent: python-keystoneclient" -H "X-Auth-Token: {SHA256}98b81840893c2eb591f2b6bb8cf75dbfdc63a10fa4f61f1a972742c0b395a905" -H "X-Subject-Token: {SHA256}0339eb21ff34edd618bb7d53f1e8a4666b0cf178d5d7336555670e520eacfcab"
+Jan 08 15:37:59 ubuntu keystoneauth.session[2426]: RESP: [200] Connection: close Content-Length: 713 Content-Type: application/json Date: Wed, 08 Jan 2020 15:37:58 GMT Server: Apache/2.4.29 (Ubuntu) Vary: X-Auth-Token X-Subject-Token: {SHA256}0339eb21ff34edd618bb7d53f1e8a4666b0cf178d5d7336555670e520eacfcab x-openstack-request-id: req-e042dc58-b97e-4b47-b5db-454727685d16
+Jan 08 15:37:59 ubuntu swift-proxy-server[2242]: keystoneauth.session: RESP: [200] Connection: close Content-Length: 713 Content-Type: application/json Date: Wed, 08 Jan 2020 15:37:58 GMT Server: Apache/2.4.29 (Ubuntu) Vary: X-Auth-Token X-Subject-Token: {SHA256}0339eb21ff34edd618bb7d53f1e8a4666b0cf178d5d7336555670e520eacfcab x-openstack-request-id: req-e042dc58-b97e-4b47-b5db-454727685d16
+Jan 08 15:37:59 ubuntu keystoneauth.session[2426]: RESP BODY: {"token": {"methods": ["password"], "user": {"domain": {"id": "default", "name": "Default"}, "id": "3970f60717864846b0cf6b43d3862b99", "name": "swift", "password_expires_at": null}, "audit_ids": ["BaDLX6jpQde6sZf5IGnsgw"], "expires_at": "2020-01-08T16:37:58.000000Z", "issued_at": "2020-01-08T15:37:58.000000Z", "project": {"domain": {"id": "default", "name": "Default"}, "id": "891374a6e0c14011896fc878070b0d40", "name": "service"}, "is_domain": false, "roles": [{"id": "b263895ec339487d8a5a47267f666efd", "name": "reader"}, {"id": "8607df8ad9754cd7a00fcce0f7208dfb", "name": "member"}, {"id": "099c924547984576bb88e8d55cf801a6", "name": "service"}, {"id": "6aecc64fa7b24b07b8a4491a1cb9ef85", "name": "admin"}]}}
+Jan 08 15:37:59 ubuntu swift-proxy-server[2242]: keystoneauth.session: RESP BODY: {"token": {"methods": ["password"], "user": {"domain": {"id": "default", "name": "Default"}, "id": "3970f60717864846b0cf6b43d3862b99", "name": "swift", "password_expires_at": null}, "audit_ids": ["BaDLX6jpQde6sZf5IGnsgw"], "expires_at": "2020-01-08T16:37:58.000000Z", "issued_at": "2020-01-08T15:37:58.000000Z", "project": {"domain": {"id": "default", "name": "Default"}, "id": "891374a6e0c14011896fc878070b0d40", "name": "service"}, "is_domain": false, "roles": [{"id": "b263895ec339487d8a5a47267f666efd", "name": "reader"}, {"id": "8607df8ad9754cd7a00fcce0f7208dfb", "name": "member"}, {"id": "099c924547984576bb88e8d55cf801a6", "name": "service"}, {"id": "6aecc64fa7b24b07b8a4491a1cb9ef85", "name": "admin"}]}}
+Jan 08 15:37:59 ubuntu keystoneauth.session[2426]: GET call to identity for http://169.16.1.124/identity/v3/auth/tokens?nocatalog used request id req-e042dc58-b97e-4b47-b5db-454727685d16
+Jan 08 15:37:59 ubuntu swift-proxy-server[2242]: keystoneauth.session: GET call to identity for http://169.16.1.124/identity/v3/auth/tokens?nocatalog used request id req-e042dc58-b97e-4b47-b5db-454727685d16
+Jan 08 15:37:59 ubuntu proxy-server[2426]: Validating token access rules against request
+Jan 08 15:37:59 ubuntu swift-proxy-server[2242]: proxy-server: Validating token access rules against request
+Jan 08 15:37:59 ubuntu proxy-server[2426]: Received request from user: user_id 3970f60717864846b0cf6b43d3862b99, project_id 891374a6e0c14011896fc878070b0d40, roles reader,member,service,admin
+Jan 08 15:37:59 ubuntu swift-proxy-server[2242]: proxy-server: Received request from user: user_id 3970f60717864846b0cf6b43d3862b99, project_id 891374a6e0c14011896fc878070b0d40, roles reader,member,service,admin
+Jan 08 15:37:59 ubuntu proxy-server[2426]: Using identity: {'user': ('3970f60717864846b0cf6b43d3862b99', 'swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['reader', 'member', 'service', 'admin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx7041dcdc7ef1432faf508-005e15f756)
+Jan 08 15:37:59 ubuntu swift-proxy-server[2242]: proxy-server: Using identity: {'user': ('3970f60717864846b0cf6b43d3862b99', 'swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['reader', 'member', 'service', 'admin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx7041dcdc7ef1432faf508-005e15f756)
+Jan 08 15:37:59 ubuntu proxy-server[2426]: allow user with role(s) admin,member as account admin (txn: tx7041dcdc7ef1432faf508-005e15f756) (client_ip: 169.16.1.124)
+Jan 08 15:37:59 ubuntu swift-proxy-server[2242]: proxy-server: allow user with role(s) admin,member as account admin (txn: tx7041dcdc7ef1432faf508-005e15f756) (client_ip: 169.16.1.124)
+Jan 08 15:37:59 ubuntu proxy-server[2426]: autocreate account '/AUTH_891374a6e0c14011896fc878070b0d40' (txn: tx7041dcdc7ef1432faf508-005e15f756)
+Jan 08 15:37:59 ubuntu swift-proxy-server[2242]: proxy-server: autocreate account '/AUTH_891374a6e0c14011896fc878070b0d40' (txn: tx7041dcdc7ef1432faf508-005e15f756)
+Jan 08 15:37:59 ubuntu proxy-server[2426]: 169.16.1.124 169.16.1.124 08/Jan/2020/15/37/59 POST /v1/AUTH_891374a6e0c14011896fc878070b0d40 HTTP/1.0 204 - openstacksdk/0.39.0%20keystoneauth1/3.18.0%20python-requests/2.22.0%20CPython/3.6.9 gAAAAABeFfdW... - - - tx7041dcdc7ef1432faf508-005e15f756 - 1.2497 - - 1578497878.452435017 1578497879.702157259 -
+Jan 08 15:37:59 ubuntu swift-proxy-server[2242]: proxy-server: 169.16.1.124 169.16.1.124 08/Jan/2020/15/37/59 POST /v1/AUTH_891374a6e0c14011896fc878070b0d40 HTTP/1.0 204 - openstacksdk/0.39.0%20keystoneauth1/3.18.0%20python-requests/2.22.0%20CPython/3.6.9 gAAAAABeFfdW... - - - tx7041dcdc7ef1432faf508-005e15f756 - 1.2497 - - 1578497878.452435017 1578497879.702157259 -
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Deferring reject downstream
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Deferring reject downstream
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Received request from
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Authorizing from an overriding middleware (txn: tx81f75dd19076488facf9b-005e15f768)
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Received request from
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Authorizing from an overriding middleware (txn: tx81f75dd19076488facf9b-005e15f768)
+Jan 08 15:38:16 ubuntu proxy-server[2426]: - - 08/Jan/2020/15/38/16 HEAD /v1/AUTH_891374a6e0c14011896fc878070b0d40%3Fformat%3Djson HTTP/1.0 204 - Swift - - - - tx81f75dd19076488facf9b-005e15f768 - 0.0123 RL - 1578497896.092218399 1578497896.104509354 -
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: - - 08/Jan/2020/15/38/16 HEAD /v1/AUTH_891374a6e0c14011896fc878070b0d40%3Fformat%3Djson HTTP/1.0 204 - Swift - - - - tx81f75dd19076488facf9b-005e15f768 - 0.0123 RL - 1578497896.092218399 1578497896.104509354 -
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Authenticating user token
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Authenticating user token
+Jan 08 15:38:16 ubuntu keystoneauth.session[2426]: REQ: curl -g -i --cacert "/opt/stack/data/ca-bundle.pem" -X GET http://169.16.1.124/identity/v3/auth/tokens?nocatalog -H "Accept: application/json" -H "OpenStack-Identity-Access-Rules: 1" -H "User-Agent: python-keystoneclient" -H "X-Auth-Token: {SHA256}98b81840893c2eb591f2b6bb8cf75dbfdc63a10fa4f61f1a972742c0b395a905" -H "X-Subject-Token: {SHA256}6a068cd2587183aac44fee8caf5b84c2891bdb5c9a156db91ae5227dc9f464ad"
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: keystoneauth.session: REQ: curl -g -i --cacert "/opt/stack/data/ca-bundle.pem" -X GET http://169.16.1.124/identity/v3/auth/tokens?nocatalog -H "Accept: application/json" -H "OpenStack-Identity-Access-Rules: 1" -H "User-Agent: python-keystoneclient" -H "X-Auth-Token: {SHA256}98b81840893c2eb591f2b6bb8cf75dbfdc63a10fa4f61f1a972742c0b395a905" -H "X-Subject-Token: {SHA256}6a068cd2587183aac44fee8caf5b84c2891bdb5c9a156db91ae5227dc9f464ad"
+Jan 08 15:38:16 ubuntu keystoneauth.session[2426]: RESP: [200] Connection: close Content-Length: 604 Content-Type: application/json Date: Wed, 08 Jan 2020 15:38:16 GMT Server: Apache/2.4.29 (Ubuntu) Vary: X-Auth-Token X-Subject-Token: {SHA256}6a068cd2587183aac44fee8caf5b84c2891bdb5c9a156db91ae5227dc9f464ad x-openstack-request-id: req-89330385-b76c-4b94-8606-70f56c8aab3c
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: keystoneauth.session: RESP: [200] Connection: close Content-Length: 604 Content-Type: application/json Date: Wed, 08 Jan 2020 15:38:16 GMT Server: Apache/2.4.29 (Ubuntu) Vary: X-Auth-Token X-Subject-Token: {SHA256}6a068cd2587183aac44fee8caf5b84c2891bdb5c9a156db91ae5227dc9f464ad x-openstack-request-id: req-89330385-b76c-4b94-8606-70f56c8aab3c
+Jan 08 15:38:16 ubuntu keystoneauth.session[2426]: RESP BODY: {"token": {"methods": ["password"], "user": {"domain": {"id": "default", "name": "Default"}, "id": "f74a2a596828484fb0619edd8e0f849d", "name": "glance-swift", "password_expires_at": null}, "audit_ids": ["p-l44IFzTqa5Awu2RTRb8Q"], "expires_at": "2020-01-08T16:38:15.000000Z", "issued_at": "2020-01-08T15:38:15.000000Z", "project": {"domain": {"id": "default", "name": "Default"}, "id": "891374a6e0c14011896fc878070b0d40", "name": "service"}, "is_domain": false, "roles": [{"id": "099c924547984576bb88e8d55cf801a6", "name": "service"}, {"id": "af1e76ed3653432a9e48417f5e1a6ebe", "name": "ResellerAdmin"}]}}
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: keystoneauth.session: RESP BODY: {"token": {"methods": ["password"], "user": {"domain": {"id": "default", "name": "Default"}, "id": "f74a2a596828484fb0619edd8e0f849d", "name": "glance-swift", "password_expires_at": null}, "audit_ids": ["p-l44IFzTqa5Awu2RTRb8Q"], "expires_at": "2020-01-08T16:38:15.000000Z", "issued_at": "2020-01-08T15:38:15.000000Z", "project": {"domain": {"id": "default", "name": "Default"}, "id": "891374a6e0c14011896fc878070b0d40", "name": "service"}, "is_domain": false, "roles": [{"id": "099c924547984576bb88e8d55cf801a6", "name": "service"}, {"id": "af1e76ed3653432a9e48417f5e1a6ebe", "name": "ResellerAdmin"}]}}
+Jan 08 15:38:16 ubuntu keystoneauth.session[2426]: GET call to identity for http://169.16.1.124/identity/v3/auth/tokens?nocatalog used request id req-89330385-b76c-4b94-8606-70f56c8aab3c
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: keystoneauth.session: GET call to identity for http://169.16.1.124/identity/v3/auth/tokens?nocatalog used request id req-89330385-b76c-4b94-8606-70f56c8aab3c
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Validating token access rules against request
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Validating token access rules against request
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx81f75dd19076488facf9b-005e15f768)
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx81f75dd19076488facf9b-005e15f768)
+Jan 08 15:38:16 ubuntu proxy-server[2426]: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: tx81f75dd19076488facf9b-005e15f768) (client_ip: 169.16.1.124)
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: tx81f75dd19076488facf9b-005e15f768) (client_ip: 169.16.1.124)
+Jan 08 15:38:16 ubuntu proxy-server[2426]: removed response headers: [('X-Backend-Timestamp', '0000000000.00000'), ('X-Backend-Put-Timestamp', '0000000000.00000'), ('X-Backend-Delete-Timestamp', '0000000000.00000'), ('X-Backend-Status-Changed-At', '0000000000.00000'), ('X-Backend-Storage-Policy-Index', '0'), ('X-Backend-Recheck-Container-Existence', '60')] (txn: tx81f75dd19076488facf9b-005e15f768) (client_ip: 169.16.1.124)
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: removed response headers: [('X-Backend-Timestamp', '0000000000.00000'), ('X-Backend-Put-Timestamp', '0000000000.00000'), ('X-Backend-Delete-Timestamp', '0000000000.00000'), ('X-Backend-Status-Changed-At', '0000000000.00000'), ('X-Backend-Storage-Policy-Index', '0'), ('X-Backend-Recheck-Container-Existence', '60')] (txn: tx81f75dd19076488facf9b-005e15f768) (client_ip: 169.16.1.124)
+Jan 08 15:38:16 ubuntu proxy-server[2426]: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/16 HEAD /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance%3Fformat%3Djson%26states%3Dlisting HTTP/1.0 404 - python-swiftclient-3.8.1 gAAAAABeFfdn... - - - tx81f75dd19076488facf9b-005e15f768 - 0.5511 - - 1578497896.089549541 1578497896.640664339 0
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/16 HEAD /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance%3Fformat%3Djson%26states%3Dlisting HTTP/1.0 404 - python-swiftclient-3.8.1 gAAAAABeFfdn... - - - tx81f75dd19076488facf9b-005e15f768 - 0.5511 - - 1578497896.089549541 1578497896.640664339 0
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Authenticating user token
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Authenticating user token
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Validating token access rules against request
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Validating token access rules against request
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx312c6d5630fb430bbd0c8-005e15f768) (client_ip: 169.16.1.124)
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx312c6d5630fb430bbd0c8-005e15f768) (client_ip: 169.16.1.124)
+Jan 08 15:38:16 ubuntu proxy-server[2426]: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: tx312c6d5630fb430bbd0c8-005e15f768) (client_ip: 169.16.1.124)
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: tx312c6d5630fb430bbd0c8-005e15f768) (client_ip: 169.16.1.124)
+Jan 08 15:38:16 ubuntu proxy-server[2426]: removed response headers: [('X-Backend-Storage-Policy-Index', '0')] (txn: tx312c6d5630fb430bbd0c8-005e15f768) (client_ip: 169.16.1.124)
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: removed response headers: [('X-Backend-Storage-Policy-Index', '0')] (txn: tx312c6d5630fb430bbd0c8-005e15f768) (client_ip: 169.16.1.124)
+Jan 08 15:38:16 ubuntu proxy-server[2426]: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/16 PUT /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance HTTP/1.0 201 - python-swiftclient-3.8.1 gAAAAABeFfdn... - - - tx312c6d5630fb430bbd0c8-005e15f768 - 0.1725 - - 1578497896.659385920 1578497896.831861019 0
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/16 PUT /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance HTTP/1.0 201 - python-swiftclient-3.8.1 gAAAAABeFfdn... - - - tx312c6d5630fb430bbd0c8-005e15f768 - 0.1725 - - 1578497896.659385920 1578497896.831861019 0
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Deferring reject downstream
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Deferring reject downstream
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Received request from
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Received request from
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Authorizing from an overriding middleware (txn: txf8b5a344a8654ea98e64f-005e15f768) (client_ip: 169.16.1.124)
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Authorizing from an overriding middleware (txn: txf8b5a344a8654ea98e64f-005e15f768) (client_ip: 169.16.1.124)
+Jan 08 15:38:16 ubuntu proxy-server[2426]: - - 08/Jan/2020/15/38/16 HEAD /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance%3Fformat%3Djson%26states%3Dlisting HTTP/1.0 204 - Swift - - - - txf8b5a344a8654ea98e64f-005e15f768 - 0.0327 RL - 1578497896.855214596 1578497896.887959480 0
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: - - 08/Jan/2020/15/38/16 HEAD /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance%3Fformat%3Djson%26states%3Dlisting HTTP/1.0 204 - Swift - - - - txf8b5a344a8654ea98e64f-005e15f768 - 0.0327 RL - 1578497896.855214596 1578497896.887959480 0
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Authenticating user token
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Authenticating user token
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Validating token access rules against request
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Validating token access rules against request
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:16 ubuntu proxy-server[2426]: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: txf8b5a344a8654ea98e64f-005e15f768)
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: txf8b5a344a8654ea98e64f-005e15f768)
+Jan 08 15:38:16 ubuntu proxy-server[2426]: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: txf8b5a344a8654ea98e64f-005e15f768) (client_ip: 169.16.1.124)
+Jan 08 15:38:16 ubuntu swift-proxy-server[2242]: proxy-server: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: txf8b5a344a8654ea98e64f-005e15f768) (client_ip: 169.16.1.124)
+Jan 08 15:38:25 ubuntu proxy-server[2426]: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/25 PUT /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance/f1ade0a4-8bf4-44ca-9c9e-66b6af41dfa9-00001 HTTP/1.0 201 - python-swiftclient-3.8.1 gAAAAABeFfdn... 204800000 - - txf8b5a344a8654ea98e64f-005e15f768 - 8.6884 - - 1578497896.843128681 1578497905.531559467 0
+Jan 08 15:38:25 ubuntu swift-proxy-server[2242]: proxy-server: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/25 PUT /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance/f1ade0a4-8bf4-44ca-9c9e-66b6af41dfa9-00001 HTTP/1.0 201 - python-swiftclient-3.8.1 gAAAAABeFfdn... 204800000 - - txf8b5a344a8654ea98e64f-005e15f768 - 8.6884 - - 1578497896.843128681 1578497905.531559467 0
+Jan 08 15:38:25 ubuntu proxy-server[2426]: Authenticating user token
+Jan 08 15:38:25 ubuntu swift-proxy-server[2242]: proxy-server: Authenticating user token
+Jan 08 15:38:25 ubuntu proxy-server[2426]: Validating token access rules against request
+Jan 08 15:38:25 ubuntu swift-proxy-server[2242]: proxy-server: Validating token access rules against request
+Jan 08 15:38:25 ubuntu proxy-server[2426]: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:25 ubuntu swift-proxy-server[2242]: proxy-server: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:25 ubuntu proxy-server[2426]: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx5d93263abaa948aeab3de-005e15f771) (client_ip: 169.16.1.124)
+Jan 08 15:38:25 ubuntu swift-proxy-server[2242]: proxy-server: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx5d93263abaa948aeab3de-005e15f771) (client_ip: 169.16.1.124)
+Jan 08 15:38:25 ubuntu proxy-server[2426]: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: tx5d93263abaa948aeab3de-005e15f771) (client_ip: 169.16.1.124)
+Jan 08 15:38:25 ubuntu swift-proxy-server[2242]: proxy-server: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: tx5d93263abaa948aeab3de-005e15f771) (client_ip: 169.16.1.124)
+Jan 08 15:38:35 ubuntu proxy-server[2426]: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/35 PUT /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance/f1ade0a4-8bf4-44ca-9c9e-66b6af41dfa9-00002 HTTP/1.0 201 - python-swiftclient-3.8.1 gAAAAABeFfdn... 204800000 - - tx5d93263abaa948aeab3de-005e15f771 - 9.5000 - - 1578497905.619693041 1578497915.119654894 0
+Jan 08 15:38:35 ubuntu swift-proxy-server[2242]: proxy-server: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/35 PUT /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance/f1ade0a4-8bf4-44ca-9c9e-66b6af41dfa9-00002 HTTP/1.0 201 - python-swiftclient-3.8.1 gAAAAABeFfdn... 204800000 - - tx5d93263abaa948aeab3de-005e15f771 - 9.5000 - - 1578497905.619693041 1578497915.119654894 0
+Jan 08 15:38:35 ubuntu proxy-server[2426]: Authenticating user token
+Jan 08 15:38:35 ubuntu swift-proxy-server[2242]: proxy-server: Authenticating user token
+Jan 08 15:38:35 ubuntu proxy-server[2426]: Validating token access rules against request
+Jan 08 15:38:35 ubuntu swift-proxy-server[2242]: proxy-server: Validating token access rules against request
+Jan 08 15:38:35 ubuntu proxy-server[2426]: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:35 ubuntu swift-proxy-server[2242]: proxy-server: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:35 ubuntu proxy-server[2426]: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx120d093204704f4fb9a44-005e15f77b) (client_ip: 169.16.1.124)
+Jan 08 15:38:35 ubuntu swift-proxy-server[2242]: proxy-server: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx120d093204704f4fb9a44-005e15f77b) (client_ip: 169.16.1.124)
+Jan 08 15:38:35 ubuntu proxy-server[2426]: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: tx120d093204704f4fb9a44-005e15f77b) (client_ip: 169.16.1.124)
+Jan 08 15:38:35 ubuntu swift-proxy-server[2242]: proxy-server: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: tx120d093204704f4fb9a44-005e15f77b) (client_ip: 169.16.1.124)
+Jan 08 15:38:42 ubuntu proxy-server[2426]: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/42 PUT /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance/f1ade0a4-8bf4-44ca-9c9e-66b6af41dfa9-00003 HTTP/1.0 201 - python-swiftclient-3.8.1 gAAAAABeFfdn... 204800000 - - tx120d093204704f4fb9a44-005e15f77b - 7.3869 - - 1578497915.127478361 1578497922.514374256 0
+Jan 08 15:38:42 ubuntu swift-proxy-server[2242]: proxy-server: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/42 PUT /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance/f1ade0a4-8bf4-44ca-9c9e-66b6af41dfa9-00003 HTTP/1.0 201 - python-swiftclient-3.8.1 gAAAAABeFfdn... 204800000 - - tx120d093204704f4fb9a44-005e15f77b - 7.3869 - - 1578497915.127478361 1578497922.514374256 0
+Jan 08 15:38:42 ubuntu proxy-server[2426]: Authenticating user token
+Jan 08 15:38:42 ubuntu swift-proxy-server[2242]: proxy-server: Authenticating user token
+Jan 08 15:38:42 ubuntu proxy-server[2426]: Validating token access rules against request
+Jan 08 15:38:42 ubuntu swift-proxy-server[2242]: proxy-server: Validating token access rules against request
+Jan 08 15:38:42 ubuntu proxy-server[2426]: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:42 ubuntu swift-proxy-server[2242]: proxy-server: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:42 ubuntu proxy-server[2426]: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx1350df4a879444c8bbf85-005e15f782) (client_ip: 169.16.1.124)
+Jan 08 15:38:42 ubuntu swift-proxy-server[2242]: proxy-server: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx1350df4a879444c8bbf85-005e15f782) (client_ip: 169.16.1.124)
+Jan 08 15:38:42 ubuntu proxy-server[2426]: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: tx1350df4a879444c8bbf85-005e15f782) (client_ip: 169.16.1.124)
+Jan 08 15:38:42 ubuntu swift-proxy-server[2242]: proxy-server: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: tx1350df4a879444c8bbf85-005e15f782) (client_ip: 169.16.1.124)
+Jan 08 15:38:49 ubuntu proxy-server[2426]: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/49 PUT /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance/f1ade0a4-8bf4-44ca-9c9e-66b6af41dfa9-00004 HTTP/1.0 201 - python-swiftclient-3.8.1 gAAAAABeFfdn... 204800000 - - tx1350df4a879444c8bbf85-005e15f782 - 6.6678 - - 1578497922.523040771 1578497929.190887213 0
+Jan 08 15:38:49 ubuntu swift-proxy-server[2242]: proxy-server: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/49 PUT /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance/f1ade0a4-8bf4-44ca-9c9e-66b6af41dfa9-00004 HTTP/1.0 201 - python-swiftclient-3.8.1 gAAAAABeFfdn... 204800000 - - tx1350df4a879444c8bbf85-005e15f782 - 6.6678 - - 1578497922.523040771 1578497929.190887213 0
+Jan 08 15:38:49 ubuntu proxy-server[2426]: Authenticating user token
+Jan 08 15:38:49 ubuntu swift-proxy-server[2242]: proxy-server: Authenticating user token
+Jan 08 15:38:49 ubuntu swift-proxy-server[2242]: proxy-server: Validating token access rules against request
+Jan 08 15:38:49 ubuntu swift-proxy-server[2242]: proxy-server: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:49 ubuntu swift-proxy-server[2242]: proxy-server: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx3889ac1d9c834dc79f26d-005e15f789) (client_ip: 169.16.1.124)
+Jan 08 15:38:49 ubuntu proxy-server[2426]: Validating token access rules against request
+Jan 08 15:38:49 ubuntu proxy-server[2426]: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:49 ubuntu swift-proxy-server[2242]: proxy-server: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: tx3889ac1d9c834dc79f26d-005e15f789) (client_ip: 169.16.1.124)
+Jan 08 15:38:49 ubuntu proxy-server[2426]: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx3889ac1d9c834dc79f26d-005e15f789) (client_ip: 169.16.1.124)
+Jan 08 15:38:49 ubuntu proxy-server[2426]: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: tx3889ac1d9c834dc79f26d-005e15f789) (client_ip: 169.16.1.124)
+Jan 08 15:38:49 ubuntu proxy-server[2426]: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/49 PUT /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance/f1ade0a4-8bf4-44ca-9c9e-66b6af41dfa9-00005 HTTP/1.0 201 - python-swiftclient-3.8.1 gAAAAABeFfdn... 21889024 - - tx3889ac1d9c834dc79f26d-005e15f789 - 0.7670 - - 1578497929.198653698 1578497929.965631485 0
+Jan 08 15:38:49 ubuntu swift-proxy-server[2242]: proxy-server: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/49 PUT /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance/f1ade0a4-8bf4-44ca-9c9e-66b6af41dfa9-00005 HTTP/1.0 201 - python-swiftclient-3.8.1 gAAAAABeFfdn... 21889024 - - tx3889ac1d9c834dc79f26d-005e15f789 - 0.7670 - - 1578497929.198653698 1578497929.965631485 0
+Jan 08 15:38:49 ubuntu proxy-server[2426]: Authenticating user token
+Jan 08 15:38:49 ubuntu swift-proxy-server[2242]: proxy-server: Authenticating user token
+Jan 08 15:38:49 ubuntu proxy-server[2426]: Validating token access rules against request
+Jan 08 15:38:49 ubuntu swift-proxy-server[2242]: proxy-server: Validating token access rules against request
+Jan 08 15:38:49 ubuntu proxy-server[2426]: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:49 ubuntu swift-proxy-server[2242]: proxy-server: Received request from user: user_id f74a2a596828484fb0619edd8e0f849d, project_id 891374a6e0c14011896fc878070b0d40, roles service,ResellerAdmin
+Jan 08 15:38:49 ubuntu proxy-server[2426]: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx92f76763b7ca483095388-005e15f789) (client_ip: 169.16.1.124)
+Jan 08 15:38:49 ubuntu swift-proxy-server[2242]: proxy-server: Using identity: {'user': ('f74a2a596828484fb0619edd8e0f849d', 'glance-swift'), 'tenant': ('891374a6e0c14011896fc878070b0d40', 'service'), 'roles': ['service', 'ResellerAdmin'], 'service_roles': [], 'user_domain': ('default', 'Default'), 'project_domain': ('default', 'Default'), 'auth_version': 3} (txn: tx92f76763b7ca483095388-005e15f789) (client_ip: 169.16.1.124)
+Jan 08 15:38:49 ubuntu proxy-server[2426]: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: tx92f76763b7ca483095388-005e15f789) (client_ip: 169.16.1.124)
+Jan 08 15:38:49 ubuntu swift-proxy-server[2242]: proxy-server: User 891374a6e0c14011896fc878070b0d40 has reseller admin authorizing (txn: tx92f76763b7ca483095388-005e15f789) (client_ip: 169.16.1.124)
+Jan 08 15:38:50 ubuntu proxy-server[2426]: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/50 PUT /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance/f1ade0a4-8bf4-44ca-9c9e-66b6af41dfa9 HTTP/1.0 201 - python-swiftclient-3.8.1 gAAAAABeFfdn... - - - tx92f76763b7ca483095388-005e15f789 - 0.0678 - - 1578497929.974894762 1578497930.042662859 0
+Jan 08 15:38:50 ubuntu swift-proxy-server[2242]: proxy-server: 169.16.1.124 169.16.1.124 08/Jan/2020/15/38/50 PUT /v1/AUTH_891374a6e0c14011896fc878070b0d40/glance/f1ade0a4-8bf4-44ca-9c9e-66b6af41dfa9 HTTP/1.0 201 - python-swiftclient-3.8.1 gAAAAABeFfdn... - - - tx92f76763b7ca483095388-005e15f789 - 0.0678 - - 1578497929.974894762 1578497930.042662859 0
+</pre></p>
+            </div>
+        </div>
+        <!-- FOOTER  -->
+        <hr>
+        <div id="footer_wrap" class="outer">
+            <footer class="inner">
+                <p class="copyright">HPE Proliant CI LOGS maintained by iLO drivers team</p>
+            </footer>
+        </div>
+    </body>
+</html>
