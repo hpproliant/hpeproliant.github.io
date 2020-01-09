@@ -101,7 +101,6 @@ def create_html(path):
             with open(path, 'r') as f:
                 file_content = f.read()
         file_display = file_display + file_content + "</pre></p>"
-        os.remove(path)
 
     html_page = html_start + table_data + file_display + html_end
     if os.path.isdir(path):
