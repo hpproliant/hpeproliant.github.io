@@ -1,0 +1,40 @@
+-- Logs begin at Mon 2019-12-23 12:37:12 UTC, end at Mon 2019-12-23 16:53:25 UTC. --
+Dec 23 15:12:41 ubuntu systemd[1]: Starting Devstack devstack@etcd.service...
+Dec 23 15:12:41 ubuntu etcd[15346]: etcd Version: 3.3.12
+Dec 23 15:12:41 ubuntu etcd[15346]: Git SHA: d57e8b8
+Dec 23 15:12:41 ubuntu etcd[15346]: Go Version: go1.10.8
+Dec 23 15:12:41 ubuntu etcd[15346]: Go OS/Arch: linux/amd64
+Dec 23 15:12:41 ubuntu etcd[15346]: setting maximum number of CPUs to 2, total number of available CPUs is 2
+Dec 23 15:12:41 ubuntu etcd[15346]: listening for peers on http://0.0.0.0:2380
+Dec 23 15:12:41 ubuntu etcd[15346]: listening for client requests on 169.16.1.130:2379
+Dec 23 15:12:41 ubuntu etcd[15346]: name = ubuntu
+Dec 23 15:12:41 ubuntu etcd[15346]: data dir = /opt/stack/data/etcd
+Dec 23 15:12:41 ubuntu etcd[15346]: member dir = /opt/stack/data/etcd/member
+Dec 23 15:12:41 ubuntu etcd[15346]: heartbeat = 100ms
+Dec 23 15:12:41 ubuntu etcd[15346]: election = 1000ms
+Dec 23 15:12:41 ubuntu etcd[15346]: snapshot count = 100000
+Dec 23 15:12:41 ubuntu etcd[15346]: advertise client URLs = http://169.16.1.130:2379
+Dec 23 15:12:41 ubuntu etcd[15346]: initial advertise peer URLs = http://169.16.1.130:2380
+Dec 23 15:12:41 ubuntu etcd[15346]: initial cluster = ubuntu=http://169.16.1.130:2380
+Dec 23 15:12:41 ubuntu etcd[15346]: starting member c41a55057704c91f in cluster 759f7b53703ba718
+Dec 23 15:12:41 ubuntu etcd[15346]: c41a55057704c91f became follower at term 0
+Dec 23 15:12:41 ubuntu etcd[15346]: newRaft c41a55057704c91f [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+Dec 23 15:12:41 ubuntu etcd[15346]: c41a55057704c91f became follower at term 1
+Dec 23 15:12:41 ubuntu etcd[15346]: simple token is not cryptographically signed
+Dec 23 15:12:41 ubuntu etcd[15346]: starting server... [version: 3.3.12, cluster version: to_be_decided]
+Dec 23 15:12:41 ubuntu etcd[15346]: c41a55057704c91f as single-node; fast-forwarding 9 ticks (election ticks 10)
+Dec 23 15:12:41 ubuntu etcd[15346]: added member c41a55057704c91f [http://169.16.1.130:2380] to cluster 759f7b53703ba718
+Dec 23 15:12:42 ubuntu etcd[15346]: c41a55057704c91f is starting a new election at term 1
+Dec 23 15:12:42 ubuntu etcd[15346]: c41a55057704c91f became candidate at term 2
+Dec 23 15:12:42 ubuntu etcd[15346]: c41a55057704c91f received MsgVoteResp from c41a55057704c91f at term 2
+Dec 23 15:12:42 ubuntu etcd[15346]: c41a55057704c91f became leader at term 2
+Dec 23 15:12:42 ubuntu etcd[15346]: raft.node: c41a55057704c91f elected leader c41a55057704c91f at term 2
+Dec 23 15:12:42 ubuntu etcd[15346]: published {Name:ubuntu ClientURLs:[http://169.16.1.130:2379]} to cluster 759f7b53703ba718
+Dec 23 15:12:42 ubuntu etcd[15346]: INFO: 2019/12/23 15:12:42 dialing to target with scheme: ""
+Dec 23 15:12:42 ubuntu etcd[15346]: INFO: 2019/12/23 15:12:42 could not get resolver for scheme: ""
+Dec 23 15:12:42 ubuntu systemd[1]: Started Devstack devstack@etcd.service.
+Dec 23 15:12:42 ubuntu etcd[15346]: ready to serve client requests
+Dec 23 15:12:42 ubuntu etcd[15346]: serving insecure client requests on 169.16.1.130:2379, this is strongly discouraged!
+Dec 23 15:12:42 ubuntu etcd[15346]: setting up the initial cluster version to 3.3
+Dec 23 15:12:42 ubuntu etcd[15346]: set the initial cluster version to 3.3
+Dec 23 15:12:42 ubuntu etcd[15346]: enabled capabilities for version 3.3

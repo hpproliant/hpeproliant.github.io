@@ -1,0 +1,18 @@
+2019-12-20 12:30:33.612 | stack.sh log /tmp/devstack_logs/devstacklog.txt.2019-12-20-123033
+2019-12-20 12:30:46.607 | Installing package prerequisites
+2019-12-20 12:44:43.097 | ironic devstack plugin.sh called: stack/pre-install
+2019-12-20 12:46:58.061 | Starting RabbitMQ
+2019-12-20 12:50:28.632 | Installing OpenStack project source
+2019-12-20 13:04:56.968 | Installing Tempest
+2019-12-20 13:06:48.259 | ironic devstack plugin.sh called: stack/install
+2019-12-20 13:06:48.448 | Installing Ironic
+2019-12-20 13:08:59.264 | Configuring and starting MySQL
+2019-12-20 13:09:12.185 | Starting Keystone
+2019-12-20 13:18:14.891 | Configuring Glance
+2019-12-20 13:19:47.295 | Configuring Neutron
+2019-12-20 13:25:28.164 | Configuring Swift
+2019-12-20 13:25:41.931 | ironic devstack plugin.sh called: stack/post-config
+2019-12-20 13:25:42.112 | Configuring Ironic
+2019-12-20 13:27:51.935 | Starting Swift
+2019-12-20 13:28:14.877 | Starting Glance
+2019-12-20 13:28:28.342 | Uploading images

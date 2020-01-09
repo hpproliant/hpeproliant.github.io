@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+    <html lang = "en-US">
+    <head>
+        <meta charset = 'utf-8'>
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width,maximum-scale=2">
+        <!-- Begin Jekyll SEO tag v2.5.0 -->
+        <title> HPE Proliant CI LOGS </title>
+        <meta name = "generator" content = "Jekyll v3.8.5" />
+        <meta property = "og:title" content = "HPE Proliant CI LOGS" />
+        <meta property = "og:locale" content = "en_US" />
+        <link rel = "canonical" href = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:url" content = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:site_name" content = "HPE Proliant CI LOGS" />
+        <script type = "application/ld+json">
+        {"@type": "WebSite", "headline": "HPE Proliant CI LOGS", "url": "https://hpproliant.github.io/hpeproliant.github.io/", "name": "HPE Proliant CI LOGS", "@context": "http://schema.org"} </script>
+        <!-- End Jekyll SEO tag -->
+    </head>
+    <body>
+     <!-- HEADER -->
+        <div id = "header_wrap" class = "outer">
+           <header class = "inner">
+              <h1 id = "project_title"> HPE Proliant CI LOGS </h1>
+              <h2 id = "project_tagline"> </h2>
+            </header>
+        </div>
+        <!-- MAIN CONTENT -->
+        <hr>
+        <div id = "main_content_wrap" class = "outer">
+            <style type = "text/css" media = "screen">
+                .container {
+                    margin: 0px auto
+                    max-width: 80%
+                    text-align: center
+                 }
+                h1 {
+                    margin: 30px 0
+                    font-size: 4em
+                    line-height: 1
+                    letter-spacing: -1px
+                }
+                table, td, th {
+                    border: 0px solid black;
+                }
+            </style>
+            <div class = "container"> <p><pre>
+
+[DEFAULT]
+logging_exception_prefix = ERROR %(name)s [01;35m%(instance)s[00m
+logging_default_format_string = %(color)s%(levelname)s %(name)s [[00;36m-%(color)s] [01;35m%(instance)s%(color)s%(message)s[00m
+logging_context_format_string = %(color)s%(levelname)s %(name)s [[01;36m%(global_request_id)s %(request_id)s [00;36m%(project_name)s %(user_name)s%(color)s] [01;35m%(instance)s%(color)s%(message)s[00m
+logging_debug_format_suffix = [00;33m{{(pid=%(process)d) %(funcName)s %(pathname)s:%(lineno)d}}[00m
+auth_strategy = keystone
+isolinux_bin = /usr/lib/ISOLINUX/isolinux.bin
+rootwrap_config = /etc/ironic/rootwrap.conf
+enabled_vendor_interfaces = fake,ipmitool,no-vendor
+enabled_network_interfaces = flat,noop
+enabled_storage_interfaces = fake,cinder,noop
+enabled_rescue_interfaces = fake,no-rescue
+enabled_raid_interfaces = fake,agent,no-raid
+enabled_inspect_interfaces = fake,no-inspect
+enabled_console_interfaces = fake,no-console
+enabled_deploy_interfaces = iscsi
+enabled_management_interfaces = ilo
+enabled_power_interfaces = ilo
+enabled_boot_interfaces = ilo-virtual-media
+enabled_bios_interfaces = fake,no-bios
+enabled_hardware_types = ilo
+transport_url = rabbit://stackrabbit:password@169.16.1.122:5672/
+rpc_transport = oslo
+host = ubuntu
+use_syslog = False
+state_path = /var/lib/ironic
+debug = True
+
+[database]
+connection = mysql+pymysql://root:password@127.0.0.1/ironic?charset=utf8
+
+[agent]
+image_download_source = swift
+deploy_logs_local_path = /tmp/devstack_logs/ironic-bm-logs/deploy_logs
+deploy_logs_storage_backend = local
+deploy_logs_collect = always
+
+[json_rpc]
+region_name = RegionOne
+cafile = /opt/stack/data/ca-bundle.pem
+project_domain_id = default
+user_domain_id = default
+project_name = service
+password = password
+username = ironic
+auth_url = http://169.16.1.122/identity
+auth_type = password
+port = 8089
+
+[deploy]
+http_root = /opt/stack/devstack/files
+http_url = http://169.16.1.122:9999/
+default_boot_option = netboot
+erase_devices_priority = 0
+fast_track = False
+
+[neutron]
+rescuing_network = private
+cleaning_network = private
+region_name = RegionOne
+cafile = /opt/stack/data/ca-bundle.pem
+project_domain_id = default
+user_domain_id = default
+project_name = service
+password = password
+username = ironic
+auth_url = http://169.16.1.122/identity
+auth_type = password
+
+[swift]
+region_name = RegionOne
+cafile = /opt/stack/data/ca-bundle.pem
+project_domain_id = default
+user_domain_id = default
+project_name = service
+password = password
+username = ironic
+auth_url = http://169.16.1.122/identity
+auth_type = password
+
+[glance]
+swift_temp_url_duration = 3600
+region_name = RegionOne
+cafile = /opt/stack/data/ca-bundle.pem
+project_domain_id = default
+user_domain_id = default
+project_name = service
+password = password
+username = ironic
+auth_url = http://169.16.1.122/identity
+auth_type = password
+
+[inspector]
+region_name = RegionOne
+cafile = /opt/stack/data/ca-bundle.pem
+project_domain_id = default
+user_domain_id = default
+project_name = service
+password = password
+username = ironic
+auth_url = http://169.16.1.122/identity
+auth_type = password
+
+[cinder]
+region_name = RegionOne
+cafile = /opt/stack/data/ca-bundle.pem
+project_domain_id = default
+user_domain_id = default
+project_name = service
+password = password
+username = ironic
+auth_url = http://169.16.1.122/identity
+auth_type = password
+
+[service_catalog]
+region_name = RegionOne
+cafile = /opt/stack/data/ca-bundle.pem
+project_domain_id = default
+user_domain_id = default
+project_name = service
+password = password
+username = ironic
+auth_url = http://169.16.1.122/identity
+auth_type = password
+
+[nova]
+send_power_notifications = false
+region_name = RegionOne
+cafile = /opt/stack/data/ca-bundle.pem
+project_domain_id = default
+user_domain_id = default
+project_name = service
+password = password
+username = ironic
+auth_url = http://169.16.1.122/identity
+auth_type = password
+
+[conductor]
+rescue_ramdisk = 
+rescue_kernel = 
+deploy_ramdisk = 
+deploy_kernel = 
+clean_nodes = false
+deploy_callback_timeout = 3000
+api_url = http://169.16.1.122/baremetal
+automated_clean = False
+
+[pxe]
+pxe_append_params = console=ttyS1
+tftp_master_path = /opt/stack/data/ironic/tftpboot/master_images
+tftp_root = /opt/stack/data/ironic/tftpboot
+tftp_server = 169.16.1.122
+
+[redfish]
+kernel_append_params = nofb nomodeset console=ttyS0,115200 systemd.journald.forward_to_console=yes
+
+[dhcp]
+dhcp_provider = neutron
+
+[keystone_authtoken]
+auth_version = 3
+memcached_servers = localhost:11211
+cafile = /opt/stack/data/ca-bundle.pem
+project_domain_name = Default
+project_name = service
+user_domain_name = Default
+password = password
+username = ironic
+auth_url = http://169.16.1.122/identity
+auth_type = password
+
+[oslo_middleware]
+enable_proxy_headers_parsing = True
+
+[disk_utils]
+iscsi_verify_attempts = 10
+
+[ilo]
+use_web_server_for_images = True
+</pre></p>
+            </div>
+        </div>
+        <!-- FOOTER  -->
+        <hr>
+        <div id="footer_wrap" class="outer">
+            <footer class="inner">
+                <p class="copyright">HPE Proliant CI LOGS maintained by iLO drivers team</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+-- Logs begin at Thu 2019-12-19 07:25:06 UTC, end at Thu 2019-12-19 08:58:25 UTC. --
+Dec 19 08:55:53 ubuntu systemd[1]: Started Devstack devstack@s-container.service.
+Dec 19 08:55:55 ubuntu container-server[476]: Started child 962 from parent 476
+Dec 19 08:55:55 ubuntu swift-container-server[476]: container-server: Started child 962 from parent 476
+Dec 19 08:55:55 ubuntu container-server[476]: Started child 963 from parent 476
+Dec 19 08:55:55 ubuntu swift-container-server[476]: container-server: Started child 963 from parent 476
