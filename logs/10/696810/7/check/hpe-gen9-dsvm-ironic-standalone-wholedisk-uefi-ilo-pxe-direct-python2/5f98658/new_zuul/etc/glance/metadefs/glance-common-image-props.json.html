@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+    <html lang = "en-US">
+    <head>
+        <meta charset = 'utf-8'>
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width,maximum-scale=2">
+        <!-- Begin Jekyll SEO tag v2.5.0 -->
+        <title> HPE Proliant CI LOGS </title>
+        <meta name = "generator" content = "Jekyll v3.8.5" />
+        <meta property = "og:title" content = "HPE Proliant CI LOGS" />
+        <meta property = "og:locale" content = "en_US" />
+        <link rel = "canonical" href = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:url" content = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:site_name" content = "HPE Proliant CI LOGS" />
+        <script type = "application/ld+json">
+        {"@type": "WebSite", "headline": "HPE Proliant CI LOGS", "url": "https://hpproliant.github.io/hpeproliant.github.io/", "name": "HPE Proliant CI LOGS", "@context": "http://schema.org"} </script>
+        <!-- End Jekyll SEO tag -->
+    </head>
+    <body>
+     <!-- HEADER -->
+        <div id = "header_wrap" class = "outer">
+           <header class = "inner">
+              <h1 id = "project_title"> HPE Proliant CI LOGS </h1>
+              <h2 id = "project_tagline"> </h2>
+            </header>
+        </div>
+        <!-- MAIN CONTENT -->
+        <hr>
+        <div id = "main_content_wrap" class = "outer">
+            <style type = "text/css" media = "screen">
+                .container {
+                    margin: 0px auto
+                    max-width: 80%
+                    text-align: center
+                 }
+                h1 {
+                    margin: 30px 0
+                    font-size: 4em
+                    line-height: 1
+                    letter-spacing: -1px
+                }
+                table, td, th {
+                    border: 0px solid black;
+                }
+            </style>
+            <div class = "container"> <p><pre>
+{
+    "display_name": "Common Image Properties",
+    "namespace": "OS::Glance::CommonImageProperties",
+    "description": "When adding an image to Glance, you may specify some common image properties that may prove useful to consumers of your image.",
+    "protected": true,
+    "resource_type_associations" : [
+    ],
+    "properties": {
+        "kernel_id": {
+            "title": "Kernel ID",
+            "type": "string",
+            "pattern": "^([0-9a-fA-F]){8}-([0-9a-fA-F]){4}-([0-9a-fA-F]){4}-([0-9a-fA-F]){4}-([0-9a-fA-F]){12}$",
+            "description": "ID of image stored in Glance that should be used as the kernel when booting an AMI-style image."
+        },
+        "ramdisk_id": {
+            "title": "Ramdisk ID",
+            "type": "string",
+            "pattern": "^([0-9a-fA-F]){8}-([0-9a-fA-F]){4}-([0-9a-fA-F]){4}-([0-9a-fA-F]){4}-([0-9a-fA-F]){12}$",
+            "description": "ID of image stored in Glance that should be used as the ramdisk when booting an AMI-style image."
+        },
+        "instance_uuid": {
+            "title": "Instance ID",
+            "type": "string",
+            "description": "Metadata which can be used to record which instance this image is associated with. (Informational only, does not create an instance snapshot.)"
+        },
+        "architecture": {
+            "title": "CPU Architecture",
+            "description": "The CPU architecture that must be supported by the hypervisor. For example, x86_64, arm, or ppc64. Run uname -m to get the architecture of a machine. We strongly recommend using the architecture data vocabulary defined by the libosinfo project for this purpose.",
+            "type": "string"
+        },
+        "os_distro": {
+            "title": "OS Distro",
+            "description": "The common name of the operating system distribution in lowercase (uses the same data vocabulary as the libosinfo project). Specify only a recognized value for this field. Deprecated values are listed to assist you in searching for the recognized value.",
+            "type": "string"
+        },
+        "os_version": {
+            "title": "OS Version",
+            "description": "Operating system version as specified by the distributor. (for example, '11.10')",
+            "type": "string"
+        }
+    }
+}
+</pre></p>
+            </div>
+        </div>
+        <!-- FOOTER  -->
+        <hr>
+        <div id="footer_wrap" class="outer">
+            <footer class="inner">
+                <p class="copyright">HPE Proliant CI LOGS maintained by iLO drivers team</p>
+            </footer>
+        </div>
+    </body>
+</html>
