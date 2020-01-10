@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+    <html lang = "en-US">
+    <head>
+        <meta charset = 'utf-8'>
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width,maximum-scale=2">
+        <!-- Begin Jekyll SEO tag v2.5.0 -->
+        <title> HPE Proliant CI LOGS </title>
+        <meta name = "generator" content = "Jekyll v3.8.5" />
+        <meta property = "og:title" content = "HPE Proliant CI LOGS" />
+        <meta property = "og:locale" content = "en_US" />
+        <link rel = "canonical" href = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:url" content = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:site_name" content = "HPE Proliant CI LOGS" />
+        <script type = "application/ld+json">
+        {"@type": "WebSite", "headline": "HPE Proliant CI LOGS", "url": "https://hpproliant.github.io/hpeproliant.github.io/", "name": "HPE Proliant CI LOGS", "@context": "http://schema.org"} </script>
+        <!-- End Jekyll SEO tag -->
+    </head>
+    <body>
+     <!-- HEADER -->
+        <div id = "header_wrap" class = "outer">
+           <header class = "inner">
+              <h1 id = "project_title"> HPE Proliant CI LOGS </h1>
+              <h2 id = "project_tagline"> </h2>
+            </header>
+        </div>
+        <!-- MAIN CONTENT -->
+        <hr>
+        <div id = "main_content_wrap" class = "outer">
+            <style type = "text/css" media = "screen">
+                .container {
+                    margin: 0px auto
+                    max-width: 80%
+                    text-align: center
+                 }
+                h1 {
+                    margin: 30px 0
+                    font-size: 4em
+                    line-height: 1
+                    letter-spacing: -1px
+                }
+                table, td, th {
+                    border: 0px solid black;
+                }
+            </style>
+            <div class = "container"> <p><pre>
+-- Logs begin at Fri 2020-01-10 17:18:32 UTC, end at Fri 2020-01-10 22:03:07 UTC. --
+Jan 10 21:30:27 ubuntu systemd[1]: Started Devstack devstack@s-container.service.
+Jan 10 21:30:29 ubuntu container-server[12722]: Started child 13217 from parent 12722
+Jan 10 21:30:29 ubuntu swift-container-server[12722]: container-server: Started child 13217 from parent 12722
+Jan 10 21:30:29 ubuntu container-server[12722]: Started child 13219 from parent 12722
+Jan 10 21:30:29 ubuntu swift-container-server[12722]: container-server: Started child 13219 from parent 12722
+Jan 10 21:31:07 ubuntu container-server[13219]: 127.0.0.1 - - [10/Jan/2020:21:31:07 +0000] "HEAD /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 404 - "HEAD http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance?format=json&states=listing" "tx284d8745edb54e8a91d35-005e18ed1a" "proxy-server 14974" 0.0034 "-" 13219 0
+Jan 10 21:31:07 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:31:07 +0000] "HEAD /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 404 - "HEAD http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance?format=json&states=listing" "tx284d8745edb54e8a91d35-005e18ed1a" "proxy-server 14974" 0.0034 "-" 13219 0
+Jan 10 21:31:10 ubuntu container-server[13217]: 127.0.0.1 - - [10/Jan/2020:21:31:10 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 201 - "PUT http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" "txd893b25a35f64f1a8d03f-005e18ed1b" "proxy-server 14974" 2.6220 "-" 13217 0
+Jan 10 21:31:10 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:31:10 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 201 - "PUT http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" "txd893b25a35f64f1a8d03f-005e18ed1b" "proxy-server 14974" 2.6220 "-" 13217 0
+Jan 10 21:31:10 ubuntu container-server[13219]: 127.0.0.1 - - [10/Jan/2020:21:31:10 +0000] "HEAD /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 204 - "HEAD http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance?format=json&states=listing" "tx52858c8da2ab4f4589cd7-005e18ed1e" "proxy-server 14974" 0.0054 "-" 13219 0
+Jan 10 21:31:10 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:31:10 +0000] "HEAD /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 204 - "HEAD http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance?format=json&states=listing" "tx52858c8da2ab4f4589cd7-005e18ed1e" "proxy-server 14974" 0.0054 "-" 13219 0
+Jan 10 21:31:39 ubuntu container-server[13217]: 127.0.0.1 - - [10/Jan/2020:21:31:39 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa-00001" 201 - "PUT http://169.16.1.124:8080/sdb1/353/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa-00001" "tx52858c8da2ab4f4589cd7-005e18ed1e" "object-server 12655" 0.0019 "-" 13217 0
+Jan 10 21:31:39 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:31:39 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa-00001" 201 - "PUT http://169.16.1.124:8080/sdb1/353/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa-00001" "tx52858c8da2ab4f4589cd7-005e18ed1e" "object-server 12655" 0.0019 "-" 13217 0
+Jan 10 21:32:01 ubuntu container-server[13219]: 127.0.0.1 - - [10/Jan/2020:21:32:01 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa-00002" 201 - "PUT http://169.16.1.124:8080/sdb1/372/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa-00002" "tx3fb0323c5605465f9c3ba-005e18ed3b" "object-server 12655" 0.3569 "-" 13219 0
+Jan 10 21:32:01 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:01 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa-00002" 201 - "PUT http://169.16.1.124:8080/sdb1/372/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa-00002" "tx3fb0323c5605465f9c3ba-005e18ed3b" "object-server 12655" 0.3569 "-" 13219 0
+Jan 10 21:32:09 ubuntu container-server[13219]: 127.0.0.1 - - [10/Jan/2020:21:32:09 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa-00003" 201 - "PUT http://169.16.1.124:8080/sdb1/54/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa-00003" "tx1453d3b7b45741b5a8466-005e18ed51" "object-server 12655" 0.0013 "-" 13219 0
+Jan 10 21:32:09 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:09 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa-00003" 201 - "PUT http://169.16.1.124:8080/sdb1/54/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa-00003" "tx1453d3b7b45741b5a8466-005e18ed51" "object-server 12655" 0.0013 "-" 13219 0
+Jan 10 21:32:09 ubuntu container-server[13217]: 127.0.0.1 - - [10/Jan/2020:21:32:09 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa" 201 - "PUT http://169.16.1.124:8080/sdb1/459/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa" "txa5936e3098a84db08c71a-005e18ed59" "object-server 12654" 0.0035 "-" 13217 0
+Jan 10 21:32:09 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:09 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa" 201 - "PUT http://169.16.1.124:8080/sdb1/459/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/ca64cc98-a11d-4dac-8ce8-d23fa65187aa" "txa5936e3098a84db08c71a-005e18ed59" "object-server 12654" 0.0035 "-" 13217 0
+Jan 10 21:32:19 ubuntu container-server[13217]: 127.0.0.1 - - [10/Jan/2020:21:32:19 +0000] "HEAD /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 204 - "HEAD http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance?format=json&states=listing" "tx8260a444f3d14f87ab066-005e18ed63" "proxy-server 14974" 0.1754 "-" 13217 0
+Jan 10 21:32:19 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:19 +0000] "HEAD /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 204 - "HEAD http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance?format=json&states=listing" "tx8260a444f3d14f87ab066-005e18ed63" "proxy-server 14974" 0.1754 "-" 13217 0
+Jan 10 21:32:19 ubuntu container-server[13217]: 127.0.0.1 - - [10/Jan/2020:21:32:19 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/3a8b3d01-2059-41b3-b0e6-85e378c58106-00001" 201 - "PUT http://169.16.1.124:8080/sdb1/32/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/3a8b3d01-2059-41b3-b0e6-85e378c58106-00001" "tx519e31cf580c4e088510f-005e18ed63" "object-server 12655" 0.0010 "-" 13217 0
+Jan 10 21:32:19 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:19 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/3a8b3d01-2059-41b3-b0e6-85e378c58106-00001" 201 - "PUT http://169.16.1.124:8080/sdb1/32/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/3a8b3d01-2059-41b3-b0e6-85e378c58106-00001" "tx519e31cf580c4e088510f-005e18ed63" "object-server 12655" 0.0010 "-" 13217 0
+Jan 10 21:32:19 ubuntu container-server[13217]: 127.0.0.1 - - [10/Jan/2020:21:32:19 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/3a8b3d01-2059-41b3-b0e6-85e378c58106" 201 - "PUT http://169.16.1.124:8080/sdb1/347/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/3a8b3d01-2059-41b3-b0e6-85e378c58106" "tx778e48f94abd4b62b53b2-005e18ed63" "object-server 12654" 0.0015 "-" 13217 0
+Jan 10 21:32:19 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:19 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/3a8b3d01-2059-41b3-b0e6-85e378c58106" 201 - "PUT http://169.16.1.124:8080/sdb1/347/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/3a8b3d01-2059-41b3-b0e6-85e378c58106" "tx778e48f94abd4b62b53b2-005e18ed63" "object-server 12654" 0.0015 "-" 13217 0
+Jan 10 21:32:24 ubuntu container-server[13219]: 127.0.0.1 - - [10/Jan/2020:21:32:24 +0000] "HEAD /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 204 - "HEAD http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance?format=json&states=listing" "tx7a65cb11487c48a881733-005e18ed67" "proxy-server 14974" 0.1891 "-" 13219 0
+Jan 10 21:32:24 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:24 +0000] "HEAD /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 204 - "HEAD http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance?format=json&states=listing" "tx7a65cb11487c48a881733-005e18ed67" "proxy-server 14974" 0.1891 "-" 13219 0
+Jan 10 21:32:24 ubuntu container-server[13219]: 127.0.0.1 - - [10/Jan/2020:21:32:24 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/aa5516b8-97a2-4f8d-80ba-48ac40404bd7-00001" 201 - "PUT http://169.16.1.124:8080/sdb1/33/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/aa5516b8-97a2-4f8d-80ba-48ac40404bd7-00001" "txc097518516ca4383a316a-005e18ed68" "object-server 12654" 0.0015 "-" 13219 0
+Jan 10 21:32:24 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:24 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/aa5516b8-97a2-4f8d-80ba-48ac40404bd7-00001" 201 - "PUT http://169.16.1.124:8080/sdb1/33/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/aa5516b8-97a2-4f8d-80ba-48ac40404bd7-00001" "txc097518516ca4383a316a-005e18ed68" "object-server 12654" 0.0015 "-" 13219 0
+Jan 10 21:32:24 ubuntu container-server[13219]: 127.0.0.1 - - [10/Jan/2020:21:32:24 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/aa5516b8-97a2-4f8d-80ba-48ac40404bd7" 201 - "PUT http://169.16.1.124:8080/sdb1/437/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/aa5516b8-97a2-4f8d-80ba-48ac40404bd7" "txb0c93b55b43e4b31a5084-005e18ed68" "object-server 12654" 0.0011 "-" 13219 0
+Jan 10 21:32:24 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:24 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/aa5516b8-97a2-4f8d-80ba-48ac40404bd7" 201 - "PUT http://169.16.1.124:8080/sdb1/437/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/aa5516b8-97a2-4f8d-80ba-48ac40404bd7" "txb0c93b55b43e4b31a5084-005e18ed68" "object-server 12654" 0.0011 "-" 13219 0
+Jan 10 21:32:27 ubuntu container-server[13219]: 127.0.0.1 - - [10/Jan/2020:21:32:27 +0000] "HEAD /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 204 - "HEAD http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance?format=json&states=listing" "txdfcb1eafc56742a08f994-005e18ed6b" "proxy-server 14974" 0.0796 "-" 13219 0
+Jan 10 21:32:27 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:27 +0000] "HEAD /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 204 - "HEAD http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance?format=json&states=listing" "txdfcb1eafc56742a08f994-005e18ed6b" "proxy-server 14974" 0.0796 "-" 13219 0
+Jan 10 21:32:29 ubuntu container-server[13219]: 127.0.0.1 - - [10/Jan/2020:21:32:29 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/db8d4378-2c8f-4b7b-92b8-c08a9c7f2f07-00001" 201 - "PUT http://169.16.1.124:8080/sdb1/7/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/db8d4378-2c8f-4b7b-92b8-c08a9c7f2f07-00001" "txe784e6fbc9974acda07d3-005e18ed6b" "object-server 12654" 0.0010 "-" 13219 0
+Jan 10 21:32:29 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:29 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/db8d4378-2c8f-4b7b-92b8-c08a9c7f2f07-00001" 201 - "PUT http://169.16.1.124:8080/sdb1/7/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/db8d4378-2c8f-4b7b-92b8-c08a9c7f2f07-00001" "txe784e6fbc9974acda07d3-005e18ed6b" "object-server 12654" 0.0010 "-" 13219 0
+Jan 10 21:32:29 ubuntu container-server[13219]: 127.0.0.1 - - [10/Jan/2020:21:32:29 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/db8d4378-2c8f-4b7b-92b8-c08a9c7f2f07" 201 - "PUT http://169.16.1.124:8080/sdb1/181/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/db8d4378-2c8f-4b7b-92b8-c08a9c7f2f07" "tx2e22ac2675234efe98add-005e18ed6d" "object-server 12654" 0.0013 "-" 13219 0
+Jan 10 21:32:29 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:29 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/db8d4378-2c8f-4b7b-92b8-c08a9c7f2f07" 201 - "PUT http://169.16.1.124:8080/sdb1/181/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/db8d4378-2c8f-4b7b-92b8-c08a9c7f2f07" "tx2e22ac2675234efe98add-005e18ed6d" "object-server 12654" 0.0013 "-" 13219 0
+Jan 10 21:32:36 ubuntu container-server[13219]: 127.0.0.1 - - [10/Jan/2020:21:32:36 +0000] "HEAD /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 204 - "HEAD http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance?format=json&states=listing" "txe81f6622ad744fadba081-005e18ed73" "proxy-server 14974" 0.6896 "-" 13219 0
+Jan 10 21:32:36 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:36 +0000] "HEAD /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 204 - "HEAD http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance?format=json&states=listing" "txe81f6622ad744fadba081-005e18ed73" "proxy-server 14974" 0.6896 "-" 13219 0
+Jan 10 21:32:37 ubuntu container-server[13219]: 127.0.0.1 - - [10/Jan/2020:21:32:37 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/43558c6a-c065-4044-9541-8676fde36904-00001" 201 - "PUT http://169.16.1.124:8080/sdb1/359/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/43558c6a-c065-4044-9541-8676fde36904-00001" "tx038268009ce2408ca67fd-005e18ed74" "object-server 12654" 0.0011 "-" 13219 0
+Jan 10 21:32:37 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:37 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/43558c6a-c065-4044-9541-8676fde36904-00001" 201 - "PUT http://169.16.1.124:8080/sdb1/359/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/43558c6a-c065-4044-9541-8676fde36904-00001" "tx038268009ce2408ca67fd-005e18ed74" "object-server 12654" 0.0011 "-" 13219 0
+Jan 10 21:32:37 ubuntu container-server[13219]: 127.0.0.1 - - [10/Jan/2020:21:32:37 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/43558c6a-c065-4044-9541-8676fde36904" 201 - "PUT http://169.16.1.124:8080/sdb1/44/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/43558c6a-c065-4044-9541-8676fde36904" "txcf7227239baf45a59d76a-005e18ed75" "object-server 12654" 0.0012 "-" 13219 0
+Jan 10 21:32:37 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:32:37 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/43558c6a-c065-4044-9541-8676fde36904" 201 - "PUT http://169.16.1.124:8080/sdb1/44/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/43558c6a-c065-4044-9541-8676fde36904" "txcf7227239baf45a59d76a-005e18ed75" "object-server 12654" 0.0012 "-" 13219 0
+Jan 10 21:36:55 ubuntu container-server[13217]: 127.0.0.1 - - [10/Jan/2020:21:36:55 +0000] "HEAD /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 204 - "HEAD http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance?format=json&states=listing" "txcb6c6e6bff7943b09bd0e-005e18ee76" "proxy-server 14974" 0.7623 "-" 13217 0
+Jan 10 21:36:55 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:36:55 +0000] "HEAD /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance" 204 - "HEAD http://169.16.1.124:8080/v1/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance?format=json&states=listing" "txcb6c6e6bff7943b09bd0e-005e18ee76" "proxy-server 14974" 0.7623 "-" 13217 0
+Jan 10 21:37:39 ubuntu container-server[13219]: 127.0.0.1 - - [10/Jan/2020:21:37:39 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/7732ada5-0793-4e38-a6a7-2deb67c6a8a7-00001" 201 - "PUT http://169.16.1.124:8080/sdb1/165/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/7732ada5-0793-4e38-a6a7-2deb67c6a8a7-00001" "tx977d498d497a4e609633a-005e18ee77" "object-server 12655" 0.0013 "-" 13219 0
+Jan 10 21:37:40 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:37:39 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/7732ada5-0793-4e38-a6a7-2deb67c6a8a7-00001" 201 - "PUT http://169.16.1.124:8080/sdb1/165/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/7732ada5-0793-4e38-a6a7-2deb67c6a8a7-00001" "tx977d498d497a4e609633a-005e18ee77" "object-server 12655" 0.0013 "-" 13219 0
+Jan 10 21:37:50 ubuntu container-server[13217]: 127.0.0.1 - - [10/Jan/2020:21:37:50 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/7732ada5-0793-4e38-a6a7-2deb67c6a8a7-00002" 201 - "PUT http://169.16.1.124:8080/sdb1/483/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/7732ada5-0793-4e38-a6a7-2deb67c6a8a7-00002" "txced7782605984881a0716-005e18eea3" "object-server 12654" 0.0015 "-" 13217 0
+Jan 10 21:37:50 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:37:50 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/7732ada5-0793-4e38-a6a7-2deb67c6a8a7-00002" 201 - "PUT http://169.16.1.124:8080/sdb1/483/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/7732ada5-0793-4e38-a6a7-2deb67c6a8a7-00002" "txced7782605984881a0716-005e18eea3" "object-server 12654" 0.0015 "-" 13217 0
+Jan 10 21:37:50 ubuntu container-server[13217]: 127.0.0.1 - - [10/Jan/2020:21:37:50 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/7732ada5-0793-4e38-a6a7-2deb67c6a8a7" 201 - "PUT http://169.16.1.124:8080/sdb1/155/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/7732ada5-0793-4e38-a6a7-2deb67c6a8a7" "tx1aa8ae17673a4a94af649-005e18eeae" "object-server 12655" 0.0013 "-" 13217 0
+Jan 10 21:37:50 ubuntu swift-container-server[12722]: container-server: 127.0.0.1 - - [10/Jan/2020:21:37:50 +0000] "PUT /sdb1/447/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/7732ada5-0793-4e38-a6a7-2deb67c6a8a7" 201 - "PUT http://169.16.1.124:8080/sdb1/155/AUTH_7be97cc16bcc4c5c8e5a5a4ece4472d4/glance/7732ada5-0793-4e38-a6a7-2deb67c6a8a7" "tx1aa8ae17673a4a94af649-005e18eeae" "object-server 12655" 0.0013 "-" 13217 0
+</pre></p>
+            </div>
+        </div>
+        <!-- FOOTER  -->
+        <hr>
+        <div id="footer_wrap" class="outer">
+            <footer class="inner">
+                <p class="copyright">HPE Proliant CI LOGS maintained by iLO drivers team</p>
+            </footer>
+        </div>
+    </body>
+</html>
