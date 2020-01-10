@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+    <html lang = "en-US">
+    <head>
+        <meta charset = 'utf-8'>
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width,maximum-scale=2">
+        <!-- Begin Jekyll SEO tag v2.5.0 -->
+        <title> HPE Proliant CI LOGS </title>
+        <meta name = "generator" content = "Jekyll v3.8.5" />
+        <meta property = "og:title" content = "HPE Proliant CI LOGS" />
+        <meta property = "og:locale" content = "en_US" />
+        <link rel = "canonical" href = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:url" content = "https://hpproliant.github.io/hpeproliant.github.io/" />
+        <meta property = "og:site_name" content = "HPE Proliant CI LOGS" />
+        <script type = "application/ld+json">
+        {"@type": "WebSite", "headline": "HPE Proliant CI LOGS", "url": "https://hpproliant.github.io/hpeproliant.github.io/", "name": "HPE Proliant CI LOGS", "@context": "http://schema.org"} </script>
+        <!-- End Jekyll SEO tag -->
+    </head>
+    <body>
+     <!-- HEADER -->
+        <div id = "header_wrap" class = "outer">
+           <header class = "inner">
+              <h1 id = "project_title"> HPE Proliant CI LOGS </h1>
+              <h2 id = "project_tagline"> </h2>
+            </header>
+        </div>
+        <!-- MAIN CONTENT -->
+        <hr>
+        <div id = "main_content_wrap" class = "outer">
+            <style type = "text/css" media = "screen">
+                .container {
+                    margin: 0px auto
+                    max-width: 80%
+                    text-align: center
+                 }
+                h1 {
+                    margin: 30px 0
+                    font-size: 4em
+                    line-height: 1
+                    letter-spacing: -1px
+                }
+                table, td, th {
+                    border: 0px solid black;
+                }
+            </style>
+            <div class = "container"> <p><pre>
+-- Logs begin at Fri 2020-01-10 15:41:09 UTC, end at Fri 2020-01-10 16:59:23 UTC. --
+Jan 10 16:40:19 ubuntu systemd[1]: Started Devstack devstack@s-account.service.
+Jan 10 16:40:20 ubuntu account-server[899]: Started child 1405 from parent 899
+Jan 10 16:40:20 ubuntu swift-account-server[899]: account-server: Started child 1405 from parent 899
+Jan 10 16:40:20 ubuntu account-server[899]: Started child 1406 from parent 899
+Jan 10 16:40:20 ubuntu swift-account-server[899]: account-server: Started child 1406 from parent 899
+Jan 10 16:40:31 ubuntu account-server[1406]: 127.0.0.1 - - [10/Jan/2020:16:40:31 +0000] "HEAD /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" 404 - "HEAD http://169.16.1.130:8080/v1/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7?format=json" "tx2623e74fb6274d0f91428-005e18a8ff" "proxy-server 2532" 0.0025 "-" 1406 -
+Jan 10 16:40:31 ubuntu swift-account-server[899]: account-server: 127.0.0.1 - - [10/Jan/2020:16:40:31 +0000] "HEAD /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" 404 - "HEAD http://169.16.1.130:8080/v1/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7?format=json" "tx2623e74fb6274d0f91428-005e18a8ff" "proxy-server 2532" 0.0025 "-" 1406 -
+Jan 10 16:40:31 ubuntu account-server[1406]: 127.0.0.1 - - [10/Jan/2020:16:40:31 +0000] "POST /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" 404 - "POST http://169.16.1.130:8080/v1/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" "tx2623e74fb6274d0f91428-005e18a8ff" "proxy-server 2532" 0.0005 "-" 1406 -
+Jan 10 16:40:31 ubuntu swift-account-server[899]: account-server: 127.0.0.1 - - [10/Jan/2020:16:40:31 +0000] "POST /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" 404 - "POST http://169.16.1.130:8080/v1/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" "tx2623e74fb6274d0f91428-005e18a8ff" "proxy-server 2532" 0.0005 "-" 1406 -
+Jan 10 16:40:32 ubuntu account-server[1405]: 127.0.0.1 - - [10/Jan/2020:16:40:32 +0000] "PUT /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" 201 - "-" "tx2623e74fb6274d0f91428-005e18a8ff" "-" 0.3533 "-" 1405 -
+Jan 10 16:40:32 ubuntu swift-account-server[899]: account-server: 127.0.0.1 - - [10/Jan/2020:16:40:32 +0000] "PUT /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" 201 - "-" "tx2623e74fb6274d0f91428-005e18a8ff" "-" 0.3533 "-" 1405 -
+Jan 10 16:40:33 ubuntu account-server[1406]: 127.0.0.1 - - [10/Jan/2020:16:40:33 +0000] "POST /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" 204 - "POST http://169.16.1.130:8080/v1/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" "tx2623e74fb6274d0f91428-005e18a8ff" "proxy-server 2532" 1.2984 "-" 1406 -
+Jan 10 16:40:33 ubuntu swift-account-server[899]: account-server: 127.0.0.1 - - [10/Jan/2020:16:40:33 +0000] "POST /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" 204 - "POST http://169.16.1.130:8080/v1/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" "tx2623e74fb6274d0f91428-005e18a8ff" "proxy-server 2532" 1.2984 "-" 1406 -
+Jan 10 16:40:50 ubuntu account-server[1406]: 127.0.0.1 - - [10/Jan/2020:16:40:50 +0000] "HEAD /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" 204 - "HEAD http://169.16.1.130:8080/v1/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7?format=json" "tx352029312cfb464d8a242-005e18a912" "proxy-server 2532" 0.0031 "-" 1406 -
+Jan 10 16:40:50 ubuntu swift-account-server[899]: account-server: 127.0.0.1 - - [10/Jan/2020:16:40:50 +0000] "HEAD /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" 204 - "HEAD http://169.16.1.130:8080/v1/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7?format=json" "tx352029312cfb464d8a242-005e18a912" "proxy-server 2532" 0.0031 "-" 1406 -
+Jan 10 16:40:50 ubuntu account-server[1406]: 127.0.0.1 - - [10/Jan/2020:16:40:50 +0000] "PUT /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7/glance" 201 - "PUT http://127.0.0.1:6611/sdb1/343/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7/glance" "txa667affac92c47dda1752-005e18a912" "container-server 857" 0.0021 "-" 1406 0
+Jan 10 16:40:50 ubuntu swift-account-server[899]: account-server: 127.0.0.1 - - [10/Jan/2020:16:40:50 +0000] "PUT /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7/glance" 201 - "PUT http://127.0.0.1:6611/sdb1/343/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7/glance" "txa667affac92c47dda1752-005e18a912" "container-server 857" 0.0021 "-" 1406 0
+Jan 10 16:42:23 ubuntu account-server[1406]: 127.0.0.1 - - [10/Jan/2020:16:42:23 +0000] "HEAD /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" 204 - "HEAD http://169.16.1.130:8080/v1/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7?format=json" "txa930b2d0d12d47c6bfacf-005e18a96f" "proxy-server 2532" 0.1045 "-" 1406 -
+Jan 10 16:42:23 ubuntu swift-account-server[899]: account-server: 127.0.0.1 - - [10/Jan/2020:16:42:23 +0000] "HEAD /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" 204 - "HEAD http://169.16.1.130:8080/v1/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7?format=json" "txa930b2d0d12d47c6bfacf-005e18a96f" "proxy-server 2532" 0.1045 "-" 1406 -
+Jan 10 16:46:14 ubuntu account-server[1406]: 127.0.0.1 - - [10/Jan/2020:16:46:14 +0000] "HEAD /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" 204 - "HEAD http://169.16.1.130:8080/v1/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7?format=json" "tx92d4829646a04247ad57a-005e18aa56" "proxy-server 2532" 0.0406 "-" 1406 -
+Jan 10 16:46:14 ubuntu swift-account-server[899]: account-server: 127.0.0.1 - - [10/Jan/2020:16:46:14 +0000] "HEAD /sdb1/52/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7" 204 - "HEAD http://169.16.1.130:8080/v1/AUTH_65fc6a11c17b4aadb5026d02a94fc1c7?format=json" "tx92d4829646a04247ad57a-005e18aa56" "proxy-server 2532" 0.0406 "-" 1406 -
+</pre></p>
+            </div>
+        </div>
+        <!-- FOOTER  -->
+        <hr>
+        <div id="footer_wrap" class="outer">
+            <footer class="inner">
+                <p class="copyright">HPE Proliant CI LOGS maintained by iLO drivers team</p>
+            </footer>
+        </div>
+    </body>
+</html>
