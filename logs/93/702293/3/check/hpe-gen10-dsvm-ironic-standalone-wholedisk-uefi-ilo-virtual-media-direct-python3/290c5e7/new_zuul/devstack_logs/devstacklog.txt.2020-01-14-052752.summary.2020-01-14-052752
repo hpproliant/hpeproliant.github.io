@@ -1,0 +1,8 @@
+2020-01-14 05:27:52.287 | stack.sh log /tmp/devstack_logs/devstacklog.txt.2020-01-14-052752
+2020-01-14 05:28:04.688 | Installing package prerequisites
+2020-01-14 05:44:42.159 | ironic devstack plugin.sh called: stack/pre-install
+2020-01-14 05:48:08.282 | Starting RabbitMQ
+2020-01-14 05:51:42.071 | Installing OpenStack project source
+2020-01-14 06:07:16.595 | Installing Tempest
+2020-01-14 06:09:21.078 | ironic devstack plugin.sh called: stack/install
+2020-01-14 06:09:21.271 | Installing Ironic
