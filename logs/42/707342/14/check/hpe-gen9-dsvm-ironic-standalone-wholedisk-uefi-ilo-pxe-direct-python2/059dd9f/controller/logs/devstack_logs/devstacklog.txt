@@ -1,1 +1,0 @@
-/tmp/devstack_logs/devstacklog.txt.2020-02-19-151641
