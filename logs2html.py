@@ -84,6 +84,9 @@ def create_html(path):
         for i in cmd_list:
             new_path = os.path.join(path, i)
             # Ignore html files (these are only generated for folders)
+            if os.path.islink(path):
+                os.remove(path)
+                continue
             if '.html' not in i:
                 if os.path.isdir(new_path):
                     table_start = table_start + \
