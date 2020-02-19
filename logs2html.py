@@ -1,6 +1,6 @@
 import os
 import sys
-import gzip
+
 
 html_start = """
 <!DOCTYPE html>
@@ -64,12 +64,15 @@ html_end = """
 </html>
 """
 
+ignore_ext = ['.txt', '.log', '.gz', '.pdf', '.ini', '.json', '.conf', 'logs2html.py']
+
 
 def create_html(path):
-    file_display = ""
     table_data = ""
+    # Ignore list
     if 'logs2html.py' in path:
         return
+    # Remove symbolic links
     if os.path.islink(path):
         os.remove(path)
         return
@@ -80,35 +83,31 @@ def create_html(path):
         table_start = "<table>\n"
         for i in cmd_list:
             new_path = os.path.join(path, i)
-            if '.html' not in i:    
+            # Ignore html files (these are only generated for folders)
+            if '.html' not in i:
                 if os.path.isdir(new_path):
                     table_start = table_start + \
                         "<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/{}/{}.html'>{}</a></td></tr>\n".format(
                             new_path.split(sys.argv[1])[-1], i, i)
+                    # Recurse for next folder
+                    create_html(new_path)
                 else:
+                    # Change extension
+                    print("kj "+new_path)
+                    if not any([x in new_path for x in ignore_ext]):
+                        os.rename(new_path, new_path + '.txt')
+                        i = i + '.txt'
                     table_start = table_start + \
-                        "<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/{}.html'>{}</a></td></tr>\n".format(
+                        "<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/{}'>{}</a></td></tr>\n".format(
                             new_path.split(sys.argv[1])[-1], i)
-                
-                create_html(new_path)
-        table_data = table_start + "</table>\n"
-    else:
-        file_display = "<p><pre>\n"
-        if '.gz' in path:
-            with gzip.open(path, 'rb') as f:
-                file_content = f.read()
-        elif '.html' not in path:
-            with open(path, 'r') as f:
-                file_content = f.read()
-        file_display = file_display + file_content + "</pre></p>"
 
-    html_page = html_start + table_data + file_display + html_end
+        table_data = table_start + "</table>\n"
+
+    html_page = html_start + table_data + html_end
     if os.path.isdir(path):
         with open(os.path.join(path, (path.split('/')[-1] + '.html')), "w") as file:
-            file.write(html_page)
-    else:
-        with open(path + '.html', "w") as file:
             file.write(html_page)
 
 
 create_html(sys.argv[1])
+
