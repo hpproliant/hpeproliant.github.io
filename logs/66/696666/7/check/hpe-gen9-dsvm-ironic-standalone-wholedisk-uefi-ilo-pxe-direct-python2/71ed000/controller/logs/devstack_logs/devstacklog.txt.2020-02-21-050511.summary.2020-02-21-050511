@@ -1,0 +1,3 @@
+2020-02-21 05:05:11.580 | stack.sh log /tmp/devstack_logs/devstacklog.txt.2020-02-21-050511
+2020-02-21 05:05:37.094 | Installing package prerequisites
+2020-02-21 05:27:55.725 | ironic devstack plugin.sh called: stack/pre-install
