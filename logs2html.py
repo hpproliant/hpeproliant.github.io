@@ -96,7 +96,6 @@ def create_html(path):
                     create_html(new_path)
                 else:
                     # Change extension
-                    print("kj "+new_path)
                     if not any([x in new_path for x in ignore_ext]):
                         os.rename(new_path, new_path + '.txt')
                         i = i + '.txt'
