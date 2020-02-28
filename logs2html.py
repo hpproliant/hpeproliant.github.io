@@ -99,6 +99,7 @@ def create_html(path):
                     if not any([x in new_path for x in ignore_ext]):
                         os.rename(new_path, new_path + '.txt')
                         i = i + '.txt'
+                        new_path = new_path + '.txt'
                     table_start = table_start + \
                         "<tr><td><a href = 'https://hpproliant.github.io/hpeproliant.github.io/{}'>{}</a></td></tr>\n".format(
                             new_path.split(sys.argv[1])[-1], i)
