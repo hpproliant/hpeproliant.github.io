@@ -1,0 +1,40 @@
+-- Logs begin at Sat 2020-03-14 00:48:11 UTC, end at Sat 2020-03-14 02:24:31 UTC. --
+Mar 14 01:33:08 ubuntu systemd[1]: Starting Devstack devstack@etcd.service...
+Mar 14 01:33:08 ubuntu etcd[2829]: etcd Version: 3.3.12
+Mar 14 01:33:08 ubuntu etcd[2829]: Git SHA: d57e8b8
+Mar 14 01:33:08 ubuntu etcd[2829]: Go Version: go1.10.8
+Mar 14 01:33:08 ubuntu etcd[2829]: Go OS/Arch: linux/amd64
+Mar 14 01:33:08 ubuntu etcd[2829]: setting maximum number of CPUs to 2, total number of available CPUs is 2
+Mar 14 01:33:08 ubuntu etcd[2829]: listening for peers on http://0.0.0.0:2380
+Mar 14 01:33:08 ubuntu etcd[2829]: listening for client requests on 169.16.1.72:2379
+Mar 14 01:33:08 ubuntu etcd[2829]: name = ubuntu
+Mar 14 01:33:08 ubuntu etcd[2829]: data dir = /opt/stack/data/etcd
+Mar 14 01:33:08 ubuntu etcd[2829]: member dir = /opt/stack/data/etcd/member
+Mar 14 01:33:08 ubuntu etcd[2829]: heartbeat = 100ms
+Mar 14 01:33:08 ubuntu etcd[2829]: election = 1000ms
+Mar 14 01:33:08 ubuntu etcd[2829]: snapshot count = 100000
+Mar 14 01:33:08 ubuntu etcd[2829]: advertise client URLs = http://169.16.1.72:2379
+Mar 14 01:33:08 ubuntu etcd[2829]: initial advertise peer URLs = http://169.16.1.72:2380
+Mar 14 01:33:08 ubuntu etcd[2829]: initial cluster = ubuntu=http://169.16.1.72:2380
+Mar 14 01:33:08 ubuntu etcd[2829]: starting member e91a89c4517f56e1 in cluster da029b324de2b29e
+Mar 14 01:33:08 ubuntu etcd[2829]: e91a89c4517f56e1 became follower at term 0
+Mar 14 01:33:08 ubuntu etcd[2829]: newRaft e91a89c4517f56e1 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+Mar 14 01:33:08 ubuntu etcd[2829]: e91a89c4517f56e1 became follower at term 1
+Mar 14 01:33:08 ubuntu etcd[2829]: simple token is not cryptographically signed
+Mar 14 01:33:08 ubuntu etcd[2829]: starting server... [version: 3.3.12, cluster version: to_be_decided]
+Mar 14 01:33:08 ubuntu etcd[2829]: e91a89c4517f56e1 as single-node; fast-forwarding 9 ticks (election ticks 10)
+Mar 14 01:33:08 ubuntu etcd[2829]: added member e91a89c4517f56e1 [http://169.16.1.72:2380] to cluster da029b324de2b29e
+Mar 14 01:33:09 ubuntu etcd[2829]: e91a89c4517f56e1 is starting a new election at term 1
+Mar 14 01:33:09 ubuntu etcd[2829]: e91a89c4517f56e1 became candidate at term 2
+Mar 14 01:33:09 ubuntu etcd[2829]: e91a89c4517f56e1 received MsgVoteResp from e91a89c4517f56e1 at term 2
+Mar 14 01:33:09 ubuntu etcd[2829]: e91a89c4517f56e1 became leader at term 2
+Mar 14 01:33:09 ubuntu etcd[2829]: raft.node: e91a89c4517f56e1 elected leader e91a89c4517f56e1 at term 2
+Mar 14 01:33:09 ubuntu etcd[2829]: published {Name:ubuntu ClientURLs:[http://169.16.1.72:2379]} to cluster da029b324de2b29e
+Mar 14 01:33:09 ubuntu etcd[2829]: setting up the initial cluster version to 3.3
+Mar 14 01:33:09 ubuntu etcd[2829]: set the initial cluster version to 3.3
+Mar 14 01:33:09 ubuntu etcd[2829]: enabled capabilities for version 3.3
+Mar 14 01:33:09 ubuntu etcd[2829]: ready to serve client requests
+Mar 14 01:33:09 ubuntu etcd[2829]: INFO: 2020/03/14 01:33:09 dialing to target with scheme: ""
+Mar 14 01:33:09 ubuntu etcd[2829]: INFO: 2020/03/14 01:33:09 could not get resolver for scheme: ""
+Mar 14 01:33:09 ubuntu systemd[1]: Started Devstack devstack@etcd.service.
+Mar 14 01:33:09 ubuntu etcd[2829]: serving insecure client requests on 169.16.1.72:2379, this is strongly discouraged!
