@@ -1,0 +1,4 @@
+-- Logs begin at Tue 2020-03-31 00:32:29 UTC, end at Tue 2020-03-31 02:32:29 UTC. --
+Mar 31 01:29:44 ubuntu systemd[1]: Started Devstack devstack@s-container-sync.service.
+Mar 31 01:29:45 ubuntu container-sync[2542]: Starting 2542
+Mar 31 01:29:45 ubuntu container-sync[2542]: Configuration option internal_client_conf_path not defined. Using default configuration, See internal-client.conf-sample for options
