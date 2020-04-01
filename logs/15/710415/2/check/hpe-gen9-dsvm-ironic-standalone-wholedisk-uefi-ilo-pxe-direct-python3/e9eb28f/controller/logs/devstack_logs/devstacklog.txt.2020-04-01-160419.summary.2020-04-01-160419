@@ -1,0 +1,32 @@
+2020-04-01 16:04:19.240 | stack.sh log /tmp/devstack_logs/devstacklog.txt.2020-04-01-160419
+2020-04-01 16:04:30.317 | Installing package prerequisites
+2020-04-01 16:16:20.128 | ironic devstack plugin.sh called: stack/pre-install
+2020-04-01 16:18:32.755 | Starting RabbitMQ
+2020-04-01 16:21:05.069 | Installing OpenStack project source
+2020-04-01 16:29:25.664 | Installing Tempest
+2020-04-01 16:31:31.786 | ironic devstack plugin.sh called: stack/install
+2020-04-01 16:31:31.949 | Installing Ironic
+2020-04-01 16:34:01.549 | Configuring and starting MySQL
+2020-04-01 16:34:18.145 | Starting Keystone
+2020-04-01 16:43:29.151 | Configuring Glance
+2020-04-01 16:44:09.609 | Configuring Neutron
+2020-04-01 16:47:52.627 | Configuring Swift
+2020-04-01 16:48:04.402 | ironic devstack plugin.sh called: stack/post-config
+2020-04-01 16:48:04.575 | Configuring Ironic
+2020-04-01 16:49:28.305 | Starting Swift
+2020-04-01 16:49:47.707 | Starting Glance
+2020-04-01 16:49:55.627 | Uploading images
+2020-04-01 16:50:59.443 | Starting Neutron
+2020-04-01 16:51:23.603 | Creating initial neutron network elements
+2020-04-01 16:52:25.165 | ironic devstack plugin.sh called: stack/extra
+2020-04-01 16:53:24.916 | Configuring Ironic networks
+2020-04-01 16:53:24.982 | Configuring Ironic cleaning network
+2020-04-01 16:53:25.132 | Configuring Ironic rescue network
+2020-04-01 16:53:25.518 | Creating and uploading baremetal images for ironic
+2020-04-01 16:54:07.350 | Building and uploading EFI boot image for ironic
+2020-04-01 16:54:15.840 | Starting Ironic
+2020-04-01 16:55:08.500 | Initializing Tempest
+2020-04-01 16:58:28.887 | Installing Tempest Plugins
+2020-04-01 16:59:01.786 | ironic devstack plugin.sh called: stack/test-config
+2020-04-01 16:59:02.133 | Configuring Tempest for Ironic needs
+2020-04-01 16:59:52.234 | stack.sh completed in 3346 seconds.
