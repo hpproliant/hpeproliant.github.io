@@ -1,0 +1,7 @@
+# ironic-rootwrap command filters for disk manipulation
+# This file should be owned by (and only-writable by) the root user
+
+[Filters]
+
+# Privsep calls within ironic (mount, umount, iscsiadm)
+privsep-rootwrap-sys_admin: RegExpFilter, privsep-helper, root, privsep-helper, --config-file, /etc/(?!\.\.).*, --privsep_context, ironic.privsep.sys_admin_pctxt, --privsep_sock_path, /tmp/.*
